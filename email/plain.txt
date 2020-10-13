@@ -1,0 +1,6 @@
+{{PARA1}}
+
+{{PARA2}}
+
+{{FOOTER1}}
+{{FOOTER2}}

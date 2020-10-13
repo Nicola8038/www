@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+html,
+body {
+  height: 100%;
+  margin: 0
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .row.header {
+  flex: 0 1 auto;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+}
+
+.box .row.footer {
+  flex: 0 1 40px;
+}
+
+.tagline {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+/*   font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+.sub {
+/*   font-family: Lato, Arial, Helvetica, sans-serif; */
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 36px;
+}
+
+.section-gray .sub {
+  font-size: larger;
+}
+
+.table-dark {
+  background-color: #202a32;
+}
+
+.section-dark {
+  background-color: #202a32;
+  color: white;
+}
+
+.section-dark h1 {
+  color: #d2ac67;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+
+.section-dark h2 {
+  color: #d2ac67;
+  font-family: "Montserrat", serif;
+  font-size: larger;
+}
+
+.section-dark h3 {
+  color: #d2ac67;
+}
+
+.profile-photo {
+  text-align: center;
+  width: 200px;
+  display: block;
+}
+
+.navbar-logo {
+  height: 45px;
+  width: auto;
+}
+  
+.navbar {
+  min-height: 90px;
+  background-color: #202a32;
+}
+  
+.navbar-dark .nav-item .nav-link {
+  color: white;
+}
+  
+.navbar-dark .nav-item:hover .nav-link {
+  color: #d2ac67;
+}
+  
+.navbar-dark .nav-item .active {
+  color: #d2ac67;
+}
+  
+.signin-button {
+  background-color: #d2ac67;
+}
+
+.page-footer {
+  color: #405464;
+}

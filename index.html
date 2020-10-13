@@ -1,7 +1,407 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Aktionariat</title>
+  <meta name="description"
+    content="Tokenize the shares of Swiss companies and create a market for them with our blockchain-based tools. We use the Ethereum Blockchain and ERC-20 Tokens and offer an App to manage your portfolio." />
+  <meta name="author" content="Murat Ögat" />
+  <meta name="author" content="Luzius Meisser" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="/css/styles2.css" />
+
+  <!-- <link rel="apple-touch-icon" href="/images/logos/logo_aktionariat_180.png" sizes="180x180" />
+    <link rel="icon" href="/images/logos/logo_aktionariat_32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/images/logos/logo_aktionariat_16.png" sizes="16x16" type="image/png" /> -->
+  <link rel="icon" href="/images/logos/transparent-logo.png" type="image/png" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body class="section-dark">
+
+  <main role="main" class="container-fullwidth">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-2 mt-lg-4">
+          <a class="navbar-brand" href="#">
+            <img class="navbar-logo" src="./images/logo_name_trans.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <p class="text-center mt-5 tagline">Create a Market for Your Shares</p>
+          <p class="text-center mt-4 sub">
+            Aktionariat is working on a set of tools for Swiss companies to create a market for
+            their shares on their own website.
+          </p>
+          <p class="text-center mb-5 sub">
+            Open technology. No intermediaries. Powered by the Ethereum blockchain.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <p>
+            <h1>Companies</h1>
+          </p>
+          <p>A curated list of Swiss firms whose shares can already be bought or sold at any time through their own
+            website.</p>
+          <table class="table table-dark table-hover">
+            <thead>
+              <tr>
+                <th scope="col" class="text-center d-none d-lg-table-cell">Icon</th>
+                <th scope="col">Ticker</th>
+                <th scope="col">Name</th>
+                <th scope="col" class="d-none d-md-table-cell text-nowrap" style="text-align:right">Price per Share</th>
+                <th scope="col" class="d-table-cell d-md-none" style="text-align:right">Price</th>
+                <th scope="col" class="d-none d-lg-table-cell" style="text-align:right">Market Cap</th>
+              </tr>
+            </thead>
+            <tbody>
+              <ranking>
+                <tr>
+                  <td class="text-center d-none d-lg-table-cell"><img src="https://quitt.ch/wp-content/uploads/favicon-32x32-1.png"></td>
+                  <td>DSHS</td>
+                  <td><a href="https://quitt.ch/investoren">Draggable ServiceHunter AG Shares</a></td>
+                  <td class="text-nowrap" style="text-align:right">420 XCHF</td>
+                  <td class="d-none d-lg-table-cell" style="text-align:right">7 560 000 CHF</td>
+                </tr>
+                <tr>
+                  <td class="text-center d-none d-lg-table-cell"><img src="images/questionmark.svg"></td>
+                  <td>???</td>
+                  <td><a href="luzius@aktionariat.com">Your Suggestion</a></td>
+                  <td class="text-nowrap" style="text-align:right"></td>
+                  <td class="d-none d-lg-table-cell" style="text-align:right">Very Valuable</td>
+                </tr>
+              </ranking>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container mt-5" data-aos="zoom-in">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <p>
+          <h1>How it Works</h1>
+          </p>
+          <img src="images/infographic2.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" data-aos="zoom-in">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <p>
+          <h1>Our Tools</h1>
+          </p>
+          <p>We are working on a set of complementing tools that can be freely combined to tokenize shares and create a
+            market for them.</p>
+          <p>Our ambition is to have them finalized once <a
+              href="https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20190074">proposal
+              19.074</a> has been set into force, which will provide Switzerland with a clear legal foundation for the
+            tokenization of shares and other securities. Today's tokenization projects are based on agreements that
+            contractually <a href="http://meissereconomics.com/2019-04-05-Aktientoken.pdf">bind the share to the
+              token</a>. This works, too, but is not as strong as an explicit article that says 'the token is the
+            share'.</p>
+        </div>
+        <div class="card-deck m-3">
+          <div class="card text-white m-3">
+            <img src="images/minting.jpg" class="card-img-top" alt="example card image">
+            <div class="card-body">
+              <h5 class="card-title">Tokenization</h5>
+              <p class="card-text">Tokenize existing or newly issued shares of your company by minting blockchain-based security tokens that implement the popular <a href="https://eips.ethereum.org/EIPS/eip-20">ERC-20 standard</a> and follow the <a href="http://blockchainfederation.ch/wp-content/uploads/2019/12/SBF-Circular-2019-01-Tokenized-Equity-4.pdf">Security Token Guidelines</a> published by the Swiss Blockchain Federation.</p>
+            </div>
+            <div class="card-footer border-0 text-center">
+            </div>
+          </div>
+          <div class="card text-white m-3">
+            <img src="images/registry.jpg" class="card-img-top" alt="example card image">
+            <div class="card-body">
+              <h5 class="card-title">Shareholder Registry</h5>
+              <p class="card-text">Shareholders must register themselves with name and address in order to enjoy their rights. We provide an according registration widget and maintain the shareholder registry in an exportable format.</p>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a href="https://github.com/aktionariat/contracts/blob/master/doc/shares.md">Documentation</a>
+            </div>
+          </div>
+          <div class="card text-white m-3">
+            <img src="images/drag-along.jpg" class="card-img-top" alt="example card image">
+            <div class="card-body">
+              <h5 class="card-title">Drag-Along Contract</h5>
+              <p class="card-text">A smart contract to automatically enforce the drag-along clause typically found in
+                shareholder agreements, enabling a blockchain-driven squeeze-out in case of an acquisition.</p>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a href="https://github.com/aktionariat/contracts/blob/master/doc/draggable.md">Documentation</a>
+            </div>
+          </div>
+          <div class="w-100 py-3"></div>
+          <div class="card text-white m-3">
+            <img src="images/saver.jpg" class="card-img-top" alt="example card image">
+            <div class="card-body">
+              <h5 class="card-title">Token Recovery</h5>
+              <p class="card-text">Tokens issued with us include a decentralized token recovery mechanism that allows
+                lost tokens to be returned to their owners.</p>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a href="https://github.com/aktionariat/contracts/blob/master/doc/recoverable.md">Documentation</a>
+            </div>
+          </div>
+          <div class="card text-white m-3">
+            <img src="images/old-keys.jpg" class="card-img-top" alt="example card image">
+            <div class="card-body">
+              <h5 class="card-title">Collective Signatures</h5>
+              <p class="card-text">A user-friendly multisignature contract to securely perform corporate actions,
+                supporting the typical signatory setups of Swiss corporations.</p>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a href="https://github.com/aktionariat/contracts/blob/master/doc/multisig.md">Documentation</a>
+            </div>
+          </div>
+          <div class="card text-white m-3">
+            <img src="images/card-lexr.jpg" class="card-img-top" alt="example card image">
+            <div class="card-body">
+              <h5 class="card-title">Legal Package</h5>
+              <p class="card-text">Comprehensive consultation as well as a legal package including articles of association, token terms, and a revision of the shareholder agreement is provided by our partner and law firm <a
+                  href="https://products.lexr.ch/tokenized-shares">lexr.ch</a>.
+              </p>
+            </div>
+         <!--  </div>
+          <div class="card text-white m-3">
+          </div> -->
+        </div>
+        <div class="col-12">
+          Stay tuned for additional tool descriptions to be added in the coming months.
+          <!-- <div class="card text-white bg-dark">
+              <img src="images/card-ir.jpg" class="card-img-top" alt="example card image">
+              <div class="card-body">
+                <h5 class="card-title">Investor Relations</h5>
+                <p class="card-text">A template and powerful widgets to build a good-looking investor relations
+                  page containing all information and data about your shares.</p>
+              </div>
+              <div class="card-footer border-0 text-center">
+                <small class="text-muted"><a href="#" class="btn btn-outline-light">Show Widget Gallery</a></small>
+              </div>
+            </div>
+            <div class="card text-white bg-dark">
+              <img src="images/card-example.jpg" class="card-img-top" alt="example card image">
+              <div class="card-body">
+                <h5 class="card-title">Portfolio App</h5>
+                <p class="card-text">A mobile portfolio app that allows investors to track and manage their investments.
+                  It also serves as user authentication tool for advanced features.</p>
+              </div>
+              <div class="card-footer border-0 text-center">
+                <a href="#"><img style="width: 42%" src="images/appstore.svg"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.lego.catalogue.german"><img
+                    style="width: 52%" alt="Get it on Google Play"
+                    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" /></a>
+              </div>
+            </div>
+            <div class="card text-white bg-dark">
+              <img src="images/card-automat.jpg" class="card-img-top" alt="example card image">
+              <div class="card-body">
+                <h5 class="card-title">The Automaton</h5>
+                <p class="card-text">A blockchain-powered automaton that allows anyone to buy or sell shares at any
+                  time. Creates a small market with configurable rules.</p>
+              </div>
+              <div class="card-footer border-0 text-center">
+                <a href="#" class="btn btn-outline-light">Tell me more</a>
+              </div>
+            </div>
+
+            <div class="card text-white bg-dark">
+              <img src="images/card-mint.png" class="card-img-top" alt="example card image">
+              <div class="card-body">
+                <h5 class="card-title">Tokenization</h5>
+                <p class="card-text">An open and audited smart contract to issue existing or new shares as security
+                  tokens on the Ethereum blockchain, adhering to the proven ERC-20 standard.</p>
+              </div>
+              <div class="card-footer border-0 text-center">
+                <small class="text-muted"><a href="#" class="btn btn-outline-light">Tell me more</a></small>
+              </div>
+            </div>
+            <div class="card text-white bg-dark">
+              <img src="images/card-example.jpg" class="card-img-top" alt="example card image">
+              <div class="card-body">
+                <h5 class="card-title">Board Member Area</h5>
+                <p class="card-text">A dashboard for board members to view the cap table, make announcements, mint new
+                  shares, and other administrative actions.</p>
+              </div>
+              <div class="card-footer border-0 text-center">
+                <small class="text-muted"><a href="#" class="btn btn-outline-light">Tell me more</a></small>
+              </div>
+            </div>
+
+            <div class="w-100 py-3"></div>
+
+            <div class="card text-white bg-dark">
+              <img src="images/card-example.jpg" class="card-img-top" alt="example card image">
+              <div class="card-body">
+                <h5 class="card-title">Shareholder Registry</h5>
+                <p class="card-text">A shareholder registry that is automatically updated whenever tokenized shares
+                  are
+                  transferred to a registered address. Can automatically sync to <a href="https://ledgy.com">Ledgy</a>.
+                </p>
+              </div>
+              <div class="card-footer border-0 text-center">
+                <small class="text-muted"><a href="#" class="btn btn-outline-light">Tell me more</a></small>
+              </div>
+            </div>
+            <div class="w-100 py-3"></div>
+
+            <div class="card text-white bg-dark">
+              <img src="images/card-example.jpg" class="card-img-top" alt="example card image">
+              <div class="card-body">
+                <h5 class="card-title">Notifications</h5>
+                <p class="card-text">Configurable notifications of shareholders and board members about price changes,
+                  announcements and other potential events of interest.</p>
+              </div>
+              <div class="card-footer border-0 text-center">
+                <small class="text-muted"><a href="#" class="btn btn-outline-light">Tell me more</a></small>
+              </div>
+            </div>
+            <div class="card text-white bg-dark">
+              <img src="images/card-example.jpg" class="card-img-top" alt="example card image">
+              <div class="card-body">
+                <h5 class="card-title">Insider Rules</h5>
+                <p class="card-text">A set of automatically enforced insider trading rules to protect investors
+                  against
+                  unfair direct or indirect losses, tailored towards small companies.</p>
+              </div>
+              <div class="card-footer border-0 text-center">
+                <small class="text-muted"><a href="#" class="btn btn-outline-light">Tell me more</a></small>
+              </div>
+            </div>
+            <div class="card text-white bg-dark">
+              <img src="images/card-unicorn.jpg" class="card-img-top" alt="example card image">
+              <div class="card-body">
+                <h5 class="card-title">Your Idea</h5>
+                <p class="card-text">Did we miss an invaluable feature?</p>
+                <p class="card-text"></p>Let us know by writing to <a href="mailto:luzius@aktionariat.com">Luzius</a>
+                or <a href="mailto:murat@aktionariat.com">Murat</a>.</p>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="container mt-5" data-aos="zoom-in">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <p>
+          <h1>Our Offer</h1>
+          </p>
+          <p>We want to enable companies to tap into the financial markets of the future -- a future we can shape
+            together.</p>
+          <p>If you are founder or investor in a robust Swiss company with a proven business model, <a
+              href="mailto:luzius@aktionariat.com">let us know</a>! You are
+            the ideal candidate for a tokenization and the creation of a secondary market for your shares.</p>
+        </div>
+      </div>
+      <p class="mt-5 text-center">More to come once we are ready. Subscribe to our newsletter to be informed first.</p>
+      <form id="newsletter" class="form-inline justify-content-center" action="/subscribe">
+        <div class="form-group mx-lg-4 mb-2">
+          <input class="form-control-lg" name="email" id="email" placeholder="Email address" />
+        </div>
+        <!-- <p>Thanks for subscribing! We have sent you a confirmation email.</p> -->
+        <button id="subscribe" class="btn-lg btn-primary mb-2">Subscribe to Newsletter</button>
+        <div class="w-100"></div>
+        <p id="thanks"></p>
+      </form>
+      <script>
+        $("#newsletter").submit(function (e) {
+          e.preventDefault();
+          $.post(
+            "/subscribe?email=" + document.getElementById("email").value,
+            $("#newsletter").serialize(), // does not work with opera in production ?!? No post data received by server.
+            function (data) {
+              $("#thanks").text(data.message);
+            },
+            "json"
+          ).fail(function (xhr, textStatus, errorThrown) {
+            $("#thanks").text(xhr.responseJSON.message);
+          });
+        });
+      </script>
+    </div>
+
+    <div class="container mt-5" data-aos="zoom-in">
+      <div class="row">
+        <div class="col-12">
+          <p>
+          <h1>About Us</h1>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 justify-content-center mb-3">
+          <img class="img-responsive profile-photo mx-auto" src="./images/photo_luzius.png" /><br />
+          <p class="h2 text-center">Luzius Meisser</p>
+          <p class="text-center">CEO, tokenization proponent, investor and board member in various startups.</p>
+          <p class="text-center"><a href="mailto:luzius@aktionariat.com">luzius@aktionariat.com</a></p>
+        </div>
+        <div class="col-md-4 justify-content-center mb-3">
+          <img class="img-responsive profile-photo mx-auto" src="./images/photo_murat.png" /><br />
+          <p class="h2 text-center">Murat Ögat</p>
+          <p class="text-center">CTO, mobile wizard, previously built a successful app production agency.</p>
+          <p class="text-center"><a href="mailto:murat@aktionariat.com">murat@aktionariat.com</a></p>
+        </div>
+        <div class="col-md-4 justify-content-center mb-3">
+          <img class="img-responsive profile-photo mx-auto" src="./images/photo_you.png" /><br />
+          <p class="h2 text-center">You?</p>
+          <p class="text-center">C?O, get in touch if you think this website needs your help.</p>
+          <p class="text-center"><a href="mailto:jobs@aktionariat.com">jobs@aktionariat.com</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container page-footer">
+    <div class="row">
+      <div class="col-12 text-center py-1">
+        Aktionariat AG, CHE-453.438.437, Zürich
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+  <!-- /.container -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!--   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script> -->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>

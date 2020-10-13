@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Aktionariat</title>
+  <meta name="description" content="" />
+  <meta name="author" content="Murat Ögat" />
+  <meta name="author" content="Luzius Meisser" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles2.css" />
+
+  <!-- <link rel="apple-touch-icon" href="/images/logos/logo_aktionariat_180.png" sizes="180x180" />
+    <link rel="icon" href="/images/logos/logo_aktionariat_32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/images/logos/logo_aktionariat_16.png" sizes="16x16" type="image/png" /> -->
+  <link rel="icon" href="/images/logos/transparent-logo.png" type="image/png" />
+</head>
+
+<body class="section-dark box">
+  <!-- Header Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark px-5">
+    <a class="navbar-brand" href="/">
+      <img class="navbar-logo" src="./images/logo_name_trans.png" />
+    </a>
+    </div>
+  </nav>
+  <!-- /Header Navbar -->
+
+  <main role="main" class="row content container-fullwidth">
+    <div class="container-fluid py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-9">
+          <h2>User Settings</h2>
+          <p><message></message></p>
+          <p>
+            These are the settings for the user with email <email></email>.
+          </p>
+          <h4>Newsletter</h4>
+          <p>Receive the Aktionariat newsletter: <newsletter></newsletter></p>
+          <p>TODO: create method to unsubscribe using /updatenotificationsettings</p>
+          <tokensubscriptions>
+            <h4>Event Notification Settings</h4>
+            <p>Your notification level is set to: <general></general></p>
+            <p>With ALL, you receive notifications for all event types that we monitor and that concern your tokens of interest.</p>
+            <p>With REASONABLE, you receive notifications for the event types we think the typical holder of a specific token is intersted in, for example price changes.</p>
+            <p>With MINIMAL, you will only receive notifications that concern your registered addresses (if any), for example when your shares are moved.</p>
+            <p>With NONE, notifications for blockchain-based events are disabled.</p>
+            <p>TODO: create method to change this here using /updatenotificationsettings</p>
+            <h4>Tokens of Interest</h4>
+            <p>We currently deem the following shares (including their related tokens) of interest to you: <tickers></tickers></p>
+            <p>All share tokens that you own and that are known to us are automatically considered of interest.</p>
+            <explicittokensubscriptions>
+            <p>Many issuers also allow you to explicitely signal your interest in a token on their website, even if you do not own any. You did so you for the following: <subscriptions></subscriptions></p>
+            <p>TODO: create method to manage entries using /updatenotificationsettings</p>
+            </explicittokensubscriptions>
+          </tokensubscriptions>
+          <h4>Personal Data</h4>
+          <p>
+            We have the following data about you on record: <person></person>
+          </p>
+          <h4>Personal Data Policy</h4>
+          <p>
+            There are two potential sources for the data we have on record: you and the issuers of share tokens that tasked us with keeping their shareholder registries up to date.
+            You can either manage your personal data with the Aktionariat app (the simpler option) or notify the issuer that entered your data about address changes.
+            Updating your data with one issuer automatically also updates your data with other issuers. If you want to be known under different names and addresses with separate issuers, you should also use separate Aktionariat accounts with separate email addresses.
+            If you want to delete your account, write to <a href="mailto:">luzius@aktionariat.com</a>. We handle deletions manually.
+            Be aware that companies are required by law to keep all information that is relevant for the shareholder registry - so if we are tasked by an issuer to keep their shareholder registry up to date, we are required to keep your data.
+            Even if you are not a shareholder anymore, the law requires all data in connection with an entry in the shareholder registry to be kept for another 10 years.
+            See also the <a href="http://blockchainfederation.ch/wp-content/uploads/2019/12/SBF-Circular-2019-01-Tokenized-Equity-4.pdf">Circular 2019/01</a> by the Swiss Blockchain Federation.
+          </p>
+          <p>
+            We might send you two types of emails: our own emails and emails sent on behalf of an issuer.
+            Our own emails include our newsletter, price updates, and other things you can subscribe to and manage here.
+            When installing the app, you are by default subscribed to all events of tokens you hold at the REASONABLE level.
+            However, you should note that even if you disable all our notifications, issuers might still use our services to deliver messages to you on behalf of them.
+            This latter category of messages is governed by your agreements with the relevant issuer. In some cases, for example the invitation to the yearly general assembly,
+            the issuer might be required by law to get in touch with you even if you opted out of email communications in general.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container-fullwidth page-footer pb-3">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9">
+        Aktionariat AG, CHE-453.438.437, Zürich
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@400;700&family=Playfair+Display&display=swap');
+
+
+/* GENERAL DARK THEME DESIGN */
+.section-dark {
+  background-color: #0a1414; /*  #202a32; */
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.section-dark h1 {
+  color: #efcb68; /*  #d2ac67 */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.section-dark h2 {
+  color: #efcb68;
+}
+
+.section-dark h3 {
+  color: #efcb68;
+}
+
+a {
+   color: #efcb68;
+  font-weight: 400;
+}
+
+a:hover {
+  color: #F5DFA3;
+}
+
+a:active {
+  color: #F5DFA3;
+}
+
+.card {
+  background-color: #0a1414; /*  #202a32; */
+  /* border-color: #F5DFA3; */ /*  #202a32; */
+}
+
+/* .card-title {
+  color: #efcb68;
+} */
+
+/* HEADER */
+.navbar-logo {
+  height: 45px;
+  width: auto;
+}
+
+
+/* TAGLINE AND SUB - FIRST SECTION */
+.tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.sub {
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 36px;
+}
+
+
+/* DARK TABLE */
+.table-dark {
+  background-color: #0a1414;
+  border-collapse: collapse;
+}
+
+td {
+  border-bottom: 1pt solid;
+}
+
+
+/* ABOUT US */
+.profile-photo {
+  text-align: center;
+  width: 200px;
+  display: block;
+}
+
+
+/* FOOTER */
+.page-footer {
+  color: #405464;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+  
+
+/* DEBUG */
+/*
+div[class="row"] {
+  outline: 1px dotted rgba(255, 255, 255, 0.05);
+}
+
+div[class^="col-"] {
+  outline: 1px dotted rgba(255, 255, 255, 0.05);
+}
+*/
