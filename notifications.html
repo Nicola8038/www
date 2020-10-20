@@ -9,12 +9,18 @@
   <meta name="description" content="" />
   <meta name="author" content="Murat Ögat" />
   <meta name="author" content="Luzius Meisser" />
+  <link rel="stylesheet" href="/node_modules/@elastic/eui/dist/eui_theme_dark.min.css" />
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="/css/styles2.css" />
+
+  <link rel="stylesheet" href="/src/components/EmailSubscription/component/EmailSubscription.css" />
+  <link rel="stylesheet" href="/src/components/NotificationSettings/component/NotificationSettings.css" />
+  <link rel="stylesheet" href="/src/components/TokenActivitySubscription/component/TokenActivitySubscription.css" />
+
 
   <!-- <link rel="apple-touch-icon" href="/images/logos/logo_aktionariat_180.png" sizes="180x180" />
     <link rel="icon" href="/images/logos/logo_aktionariat_32.png" sizes="32x32" type="image/png" />
@@ -43,23 +49,8 @@
           </p>
           <h4>Newsletter</h4>
           <p>Receive the Aktionariat newsletter: <newsletter></newsletter></p>
-          <p>TODO: create method to unsubscribe using /updatenotificationsettings</p>
-          <tokensubscriptions>
-            <h4>Event Notification Settings</h4>
-            <p>Your notification level is set to: <general></general></p>
-            <p>With ALL, you receive notifications for all event types that we monitor and that concern your tokens of interest.</p>
-            <p>With REASONABLE, you receive notifications for the event types we think the typical holder of a specific token is intersted in, for example price changes.</p>
-            <p>With MINIMAL, you will only receive notifications that concern your registered addresses (if any), for example when your shares are moved.</p>
-            <p>With NONE, notifications for blockchain-based events are disabled.</p>
-            <p>TODO: create method to change this here using /updatenotificationsettings</p>
-            <h4>Tokens of Interest</h4>
-            <p>We currently deem the following shares (including their related tokens) of interest to you: <tickers></tickers></p>
-            <p>All share tokens that you own and that are known to us are automatically considered of interest.</p>
-            <explicittokensubscriptions>
-            <p>Many issuers also allow you to explicitely signal your interest in a token on their website, even if you do not own any. You did so you for the following: <subscriptions></subscriptions></p>
-            <p>TODO: create method to manage entries using /updatenotificationsettings</p>
-            </explicittokensubscriptions>
-          </tokensubscriptions>
+          <section id="notification-settings">
+          </section>
           <h4>Personal Data</h4>
           <p>
             We have the following data about you on record: <person></person>
@@ -96,6 +87,8 @@
     </div>
   </footer>
   <!-- Footer -->
+
+  <script src="./dist/main.js"></script>
 </body>
 
 </html>
