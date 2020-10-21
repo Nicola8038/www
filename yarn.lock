@@ -2,15 +2,25 @@
 # yarn lockfile v1
 
 
-"@aktionariat/notification-settings@^1.0.3":
-  version "1.0.3"
-  resolved "https://npm.pkg.github.com/download/@aktionariat/notification-settings/1.0.3/3cf04f76fbb6e80c9a55610ba2c24fadac57915638cf898db56c55a29b91e6af#abc7e9482343625d79d7f9624d5fe9569ac80722"
-  integrity sha512-mTQAPJkBhFRqcsfZkJtZJlPY3g856ZP/NxEhckrlQCBAtawena9lygnRYJsoVEj/Tudg5IJqfdn/DINE11o0VA==
+"@aktionariat/email-subscription@1.0.0":
+  version "1.0.0"
+  resolved "https://npm.pkg.github.com/download/@aktionariat/email-subscription/1.0.0/e936a9b6af6c9a1cf31cdb0bc7b47533ca4d39c564c949083cd97744de612a09#5f55ca9da4311781386c0b2735cfdf6413ede190"
+  integrity sha512-SjREVlotVHscqGq5fpMGDoUuKzagYdTgviWElZLIDpXRb/jiBidwTZonnFiJ9ZhZhhuuJmtSt+CvEpfL6f3pZw==
+
+"@aktionariat/notification-settings@1.1.0":
+  version "1.1.0"
+  resolved "https://npm.pkg.github.com/download/@aktionariat/notification-settings/1.1.0/6e27620bcec7764e6ac26c9f211251734d48e73363d156289bfca511e4a7cc99#da15eb293627ce58d2cd33cc0d33f960185a495b"
+  integrity sha512-0xrVZElDPrvLBS/Ax8ERZeQG3CBTH1Y+qlidcP5mx7T2odgxNkKNAOxfo+qkTANxYCct0jmJoGtLmLORoQHsBA==
 
 "@aktionariat/read-url-vars@^1.0.1":
   version "1.0.1"
   resolved "https://npm.pkg.github.com/download/@aktionariat/read-url-vars/1.0.1/7e68d9b35d8bec6d091db84c55393845ec55837047ad1484b115d78e1bc57270#0030908fecba9f9d7c8d32d4494d028d37256e9e"
   integrity sha512-Tnp4TTDEKc+r/wOzEROlNpjo2IVB4FDW9hTymWZA5SXlT/1RB9ZMjdvTYvIkAPk5Z76SUlOCzZELDFxCzpg5Vg==
+
+"@aktionariat/token-activity-subscription@1.1.0":
+  version "1.1.0"
+  resolved "https://npm.pkg.github.com/download/@aktionariat/token-activity-subscription/1.1.0/44b9e2b788667beba4fb9c36cb294b489405ab07dc1473b3616d1988e71d3169#e93cf83511a0d50332e856e09eb3f523efc0d04e"
+  integrity sha512-uyoJ/ISXCFpuUKizYYLcnIyzRfanRvnPMSC4KEp+9QrPjOxBdnmGkcopZl1WbSathHsVekFD3PkVMsX/4Rwo2g==
 
 "@aktionariat/utility-js@^1.0.0":
   version "1.0.0"

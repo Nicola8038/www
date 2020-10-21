@@ -1,0 +1,67 @@
+.notification p {
+  color: #777;
+}
+
+.notification__impressive {
+  color: white;
+}
+
+.notification__explain-group {
+  margin-bottom: 32px;
+}
+
+.notification__explain-group .list-group-item {
+  background-color: #0a1414;
+  color: #777;
+}
+
+/** OVERWRITES */
+
+.euiPanel--paddingMedium .euiPanel--paddingMedium {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#notification-settings .email-subscription,
+#notification-settings .euiButtonIcon--primary,
+#notification-settings .euiListGroupItem__label {
+  color: #efcb68;
+}
+
+#notification-settings .euiSwitch__body,
+#notification-settings .euiRadio .euiRadio__input:checked+.euiRadio__circle {
+  background-color: #efcb68;
+}
+
+#notification-settings .euiSwitch__button[aria-checked=true] .euiSwitch__thumb {
+  border-color: #ae944c;
+}
+
+#notification-settings .euiRadio__input:active:not(:disabled)+.euiRadio__circle,
+#notification-settings .euiRadio__input:checked+.euiRadio__circle {
+  border-color: #efcb68;
+}
+
+#notification-settings .euiRadio__input:active:not(:disabled)+.euiRadio__circle {
+  -webkit-animation: focusRingAnimate .35s cubic-bezier(.694,.0482,.335,1) 1 normal forwards!important;
+  animation: focusRingAnimate .35s cubic-bezier(.694,.0482,.335,1) 1 normal forwards!important;
+}
+
+.notification-settings__message {
+  will-change: margin-bottom;
+  transition: margin-bottom .5s ease-out;
+  margin-bottom: 20px;
+}
+
+.notification-settings__message--hidden {
+  margin-bottom: 0;
+}
+
+/** UTILS */
+
+.u-uppercase {
+  text-transform: uppercase;
+}
