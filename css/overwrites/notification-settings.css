@@ -17,12 +17,9 @@
 
 /** OVERWRITES */
 
-.euiPanel--paddingMedium .euiPanel--paddingMedium {
-  padding: 0;
-  background-color: transparent;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
+#notification-settings .euiRadioGroup__item:last-child .euiRadio__label,
+#notification-settings .euiListGroup {
+  margin-bottom: 0;
 }
 
 #notification-settings .email-subscription,
@@ -58,6 +55,10 @@
 
 .notification-settings__message--hidden {
   margin-bottom: 0;
+}
+
+.token-level-subscription .euiRadioGroup__item::after {
+  color: #777;
 }
 
 /** UTILS */

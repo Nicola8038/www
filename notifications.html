@@ -19,9 +19,8 @@
 
   <link rel="stylesheet" href="/node_modules/@aktionariat/email-subscription/dist/EmailSubscription.bundle.css" />
   <link rel="stylesheet" href="/node_modules/@aktionariat/notification-settings/dist/NotificationSettings.bundle.css" />
+  <link rel="stylesheet" href="/node_modules/@aktionariat/token-activity-subscription/dist/TokenActivitySubscription.bundle.css" />
   <link rel="stylesheet" href="/css/overwrites/notification-settings.css" />
-
-
 
   <!-- <link rel="apple-touch-icon" href="/images/logos/logo_aktionariat_180.png" sizes="180x180" />
     <link rel="icon" href="/images/logos/logo_aktionariat_32.png" sizes="32x32" type="image/png" />
@@ -53,16 +52,11 @@
             <p>Receive the Aktionariat newsletter:</p>
             <div id="notification-settings__email-subscription"></div>
             <h4>Event Notification Settings</h4>
-            <ul class="list-group notification__explain-group">
-              <li class="list-group-item">With <strong class="u-uppercase notification__impressive">all</strong>, you receive notifications for all event types that we monitor and that concern your tokens of interest.</li>
-              <li class="list-group-item">With <strong class="u-uppercase notification__impressive">reasonable</strong>, you receive notifications for the event types we think the typical holder of a specific token is intersted in, for example price changes.</li>
-              <li class="list-group-item">With <strong class="u-uppercase notification__impressive">minimal</strong>, you will only receive notifications that concern your registered addresses (if any), for example when your shares are moved.</li>
-              <li class="list-group-item">With <strong class="u-uppercase notification__impressive">none</strong>, notifications for blockchain-based events are disabled.</li>
-            </ul>
             <div id="notification-settings__token-level-subscription">
             </div>
             <h4>Tokens of Interest</h4>
-            <p>We currently deem the following shares (including their related tokens) of interest to you: <tickers></tickers></p>
+            <p>We currently deem the following shares (including their related tokens) of interest to you:</p>
+            <div id="notification-settings__token-ticker-list"></div>
             <p>All share tokens that you own and that are known to us are automatically considered of interest.</p>
             <p>Many issuers also allow you to explicitely signal your interest in a token on their website, even if you do not own any. You did so you for the following: </p>
             <div id="notification-settings__token-activity-subscription"></div>
