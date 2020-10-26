@@ -1,8 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import EmailSubscription from '@aktionariat/email-subscription/dist/EmailSubscription.bundle.es.js'
-import TokenActivitySubscription, {TokenLevelSubscription, TokenTickerList} from '@aktionariat/token-activity-subscription/dist/TokenActivitySubscription.bundle.es.js'
-import NotificationSettings from '@aktionariat/notification-settings/dist/NotificationSettings.bundle.es.js'
+import EmailSubscription from '@aktionariat/email-subscription/dist/EmailSubscription.bundle.es.min.js'
+import TokenActivitySubscription, {
+  TokenLevelSubscription,
+  TokenTickerList
+} from '@aktionariat/token-activity-subscription/dist/TokenActivitySubscription.bundle.es.min.js'
+import NotificationSettings from '@aktionariat/notification-settings/dist/NotificationSettings.bundle.es.min.js'
 import defaultProps from '@aktionariat/notification-settings/component/defaultProps.json'
 import {parseUrlQueryToObject} from '@aktionariat/utility-js'
 
@@ -18,8 +21,9 @@ const props = {...defaultProps, ...{
 
 const notificationEmail = document.getElementById('notification__email')
 if(notificationEmail) notificationEmail.innerText = urlVars.email
-
-console.log(props)
+if(notificationEmail && (!urlVars.email || !urlVars.code)) {
+  alert('URL parameter "email" or "code" is missing')
+}
 
 ReactDOM.render(
   <NotificationSettings {...props}>
@@ -34,7 +38,7 @@ ReactDOM.render(
   , document.getElementById('notification-settings__token-level-subscription'));
 
 ReactDOM.render(
-  <NotificationSettings {...props}>
+  <NotificationSettings {...props} withPanel={false}>
     <TokenTickerList />
   </NotificationSettings>
   , document.getElementById('notification-settings__token-ticker-list'));

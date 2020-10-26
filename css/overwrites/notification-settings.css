@@ -2,7 +2,8 @@
   color: #777;
 }
 
-.notification__impressive {
+.notification__impressive,
+.token-ticker-list {
   color: white;
 }
 
@@ -15,6 +16,11 @@
   color: #777;
 }
 
+
+.token-ticker-list + .notification-settings__message {
+  display: none;
+}
+
 /** OVERWRITES */
 
 #notification-settings .euiRadioGroup__item:last-child .euiRadio__label,
@@ -22,6 +28,7 @@
   margin-bottom: 0;
 }
 
+#notification-settings .euiRadioGroup__item .euiRadio__label,
 #notification-settings .email-subscription,
 #notification-settings .euiButtonIcon--primary,
 #notification-settings .euiListGroupItem__label {
@@ -31,6 +38,10 @@
 #notification-settings .euiSwitch__body,
 #notification-settings .euiRadio .euiRadio__input:checked+.euiRadio__circle {
   background-color: #efcb68;
+}
+
+#notification-settings [aria-checked="false"] .euiSwitch__body {
+  background-color: #777;
 }
 
 #notification-settings .euiSwitch__button[aria-checked=true] .euiSwitch__thumb {

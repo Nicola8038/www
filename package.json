@@ -12,9 +12,9 @@
     "build": "webpack --mode development"
   },
   "dependencies": {
-    "@aktionariat/email-subscription": "1.0.0",
-    "@aktionariat/token-activity-subscription": "1.3.0",
-    "@aktionariat/notification-settings": "1.2.0",
+    "@aktionariat/email-subscription": "1.0.3",
+    "@aktionariat/notification-settings": "1.2.2",
+    "@aktionariat/token-activity-subscription": "1.4.2",
     "@elastic/eui": "^30.0.0"
   },
   "devDependencies": {
