@@ -5,21 +5,21 @@
   <meta charset="utf-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  
   <title>Aktionariat</title>
-  <meta name="description" content="" />
+  <meta name="description" content="Board Member Confirmation" />
   <meta name="author" content="Murat Ögat" />
   <meta name="author" content="Luzius Meisser" />
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/styles2.css" />
-
-  <!-- <link rel="apple-touch-icon" href="/images/logos/logo_aktionariat_180.png" sizes="180x180" />
-    <link rel="icon" href="/images/logos/logo_aktionariat_32.png" sizes="32x32" type="image/png" />
-    <link rel="icon" href="/images/logos/logo_aktionariat_16.png" sizes="16x16" type="image/png" /> -->
+  
+  <base href="/">
   <link rel="icon" href="/images/logos/transparent-logo.png" type="image/png" />
+  <link rel="stylesheet" 
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+  crossorigin="anonymous">
+  
+  <script src="./lib/confirmdashboard/confirmdashboard.js" defer></script>
+  <link rel="stylesheet" href="./lib/confirmdashboard/styles.css">
 </head>
 
 <body class="section-dark box">
@@ -28,34 +28,18 @@
     <a class="navbar-brand" href="/">
       <img class="navbar-logo" src="./images/logo_name_trans.png" />
     </a>
-    </div>
   </nav>
   <!-- /Header Navbar -->
-
-  <main role="main" class="row content container-fullwidth">
-    <div class="container-fluid py-5">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-9">
-          <p>
-            <h1>Board Member Confirmation</h1>
-          </p>
-          <p>
-            <message>Thanks for confirming your email address.</message>
-          </p>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="container-fullwidth page-footer pb-3">
+  
+  <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-9">
-        Aktionariat AG, CHE-453.438.437, Zürich
+      <div class="col-12">
+        
+        <app-confirm-dashboard></app-confirm-dashboard>
+        
       </div>
     </div>
-  </footer>
-  <!-- Footer -->
+  </div>
+  
 </body>
-
 </html>
