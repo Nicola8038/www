@@ -4,7 +4,7 @@
   "marketMakerAddress": "0x7b3142BcE29F3A5434e37eEBB9538B78E9c00569",
   "xchfAddress": "0xB4272071eCAdd69d933AdcD19cA99fe80664fc08",
   "uniswapPairAddress": "0x4da3360cbdD27F2928a4e6fDFEF86f274Cd2cCC8",
-  "nodeURL": "https://ropsten.infura.io/v3/0ad504397bca47a6bf0c70a57c2ccfbf",
+  "nodeURL": "https://mainnet.infura.io/v3/0ad504397bca47a6bf0c70a57c2ccfbf",
   "logoURL": "https://aktionariat.com/companies/aktionariat/logo_name_trans.png",
   "chainID": 1
 }
