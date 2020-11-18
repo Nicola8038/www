@@ -1,0 +1,10 @@
+{
+  "companyID": 77,
+  "companyName": "Aktionariat AG Test",
+  "marketMakerAddress": "0x8543a82d8F5D7ed258e39f70634185811DFCfF00",
+  "xchfAddress": "0x6EfF3b959aF6172cEec22B5407A4Ba2B940a1C5F",
+  "uniswapPairAddress": "0xD503E56c8524c65873711c74D9C28509F912d2e0",
+  "nodeURL": "https://ropsten.infura.io/v3/0ad504397bca47a6bf0c70a57c2ccfbf",
+  "logoURL": "https://aktionariat.com/companies/aktionariat-test-ropsten/logo_name_trans.png",
+  "chainID": 1
+}
