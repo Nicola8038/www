@@ -6,5 +6,6 @@
   "uniswapPairAddress": "0x4da3360cbdD27F2928a4e6fDFEF86f274Cd2cCC8",
   "nodeURL": "https://mainnet.infura.io/v3/0ad504397bca47a6bf0c70a57c2ccfbf",
   "logoURL": "https://aktionariat.com/companies/aktionariat/logo_name_trans.png",
+  "termsURL": "https://aktionariat.com/terms.html",
   "chainID": 1
 }
