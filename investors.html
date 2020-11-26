@@ -19,6 +19,7 @@
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/data.js"></script>
   <script src="/lib/chart.js"></script>
+  <script src="/lib/info.js"></script><script>loadTokenData("AKT");</script>
 
   <!-- <link rel="apple-touch-icon" href="/images/logos/logo_aktionariat_180.png" sizes="180x180" />
     <link rel="icon" href="/images/logos/logo_aktionariat_32.png" sizes="32x32" type="image/png" />
@@ -45,22 +46,22 @@
           </div>
           <h2>General</h2>
           <p>
-            Aktionariat AG is a Swiss corporation based in Zurich with trade register number <a
-              id=gov-id>ZEFIX-LINK</a>.
+            Aktionariat AG is a Swiss corporation based in Zurich with trade register number <a target="_blank"
+            href="https://zh.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-453.438.437">CHE-453.438.437</a>.
             Its purpose is to enable Swiss companies to create a market for their shares.
-            Its capital is divided into <var id=total-supply>TOTAL-SUPPLY</var> shares, out of which <var
-              id=tokenized-shares>TOKENIZED-SHARES</var> have
-            been issued as blockchain-based ERC-20 tokens with the ticker symbol <a id=ticker>TICKER</a>.
-            <var id=treasury>TREASURY</var> shares are held by the company itself.
           </p>
           <p>
             We will start to tokenize our shares using our own technology as soon as the Federal Council sets the
-            Swiss
-            "blockchain law" into force, which we hope to happen by summer 2021.
-            In the meantime, feel free to play with our test tokens with symbol <a target="_blank"
-              href="https://etherscan.io">TAKT</a>.
+            Swiss "blockchain law" into force, which we hope to happen by summer 2021.
+            In the meantime, feel free to play with our test tokenn named <a class=aktionariat-namelink>NAME</a>.
+            There are <var class=aktionariat-totalshares></var> test tokens in circulation, out of which <var
+            class=aktionariat-tokenizedshares></var> have been issued as blockchain-based ERC-20 named <a class=aktionariat-namelink>NAME</a>.
+            <var class=aktionariat-treasuryshares></var> tokens are held by the company itself. The current market
+            price per share is <var class=aktionariat-price></var>.
             You can trade them directly on this website using our <a href="#automaton">Automaton</a> and a
             WalletConnect-compatible wallet.
+          </p>
+          <p>
             Regardless of which wallet you prefer to manage your private keys, we recommend to install the Aktionariat
             app to monitor your portfolio of crypto assets as it is the only wallet that is aware of the 
             additional data available for our share tokens.
@@ -142,6 +143,7 @@
       </div>
     </div>
   </footer>
+
   <!-- Footer -->
 </body>
 
