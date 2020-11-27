@@ -361,7 +361,7 @@
         $("#newsletter").submit(function (e) {
           e.preventDefault();
           $.post(
-            "/subscribe?email=" + document.getElementById("email").value,
+            "https://api.aktionariat.com/subscribe?email=" + document.getElementById("email").value,
             $("#newsletter").serialize(), // does not work with opera in production ?!? No post data received by server.
             function (data) {
               $("#thanks").text(data.message);
