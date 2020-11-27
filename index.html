@@ -19,9 +19,10 @@
   <!-- <link rel="apple-touch-icon" href="/images/logos/logo_aktionariat_180.png" sizes="180x180" />
     <link rel="icon" href="/images/logos/logo_aktionariat_32.png" sizes="32x32" type="image/png" />
     <link rel="icon" href="/images/logos/logo_aktionariat_16.png" sizes="16x16" type="image/png" /> -->
-  <link rel="icon" href="/images/logos/transparent-logo.png" type="image/png" />
+<!--   <link rel="icon" href="/favicon.ico" type="image/png" /> -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="icon" href="favicon.ico">
+  <script src="/lib/subscription.js"></script>
 </head>
 
 <body class="section-dark">
@@ -348,30 +349,7 @@
         </div>
       </div>
       <p class="mt-5 text-center">More to come once we are ready. Subscribe to our newsletter to be informed first.</p>
-      <form id="newsletter" class="form-inline justify-content-center" action="/subscribe">
-        <div class="form-group mx-lg-4 mb-2">
-          <input class="form-control-lg" name="email" id="email" placeholder="Email address" />
-        </div>
-        <!-- <p>Thanks for subscribing! We have sent you a confirmation email.</p> -->
-        <button id="subscribe" class="btn-lg btn-primary mb-2">Subscribe to Newsletter</button>
-        <div class="w-100"></div>
-        <p id="thanks"></p>
-      </form>
-      <script>
-        $("#newsletter").submit(function (e) {
-          e.preventDefault();
-          $.post(
-            "https://api.aktionariat.com/subscribe?email=" + document.getElementById("email").value,
-            $("#newsletter").serialize(), // does not work with opera in production ?!? No post data received by server.
-            function (data) {
-              $("#thanks").text(data.message);
-            },
-            "json"
-          ).fail(function (xhr, textStatus, errorThrown) {
-            $("#thanks").text(xhr.responseJSON.message);
-          });
-        });
-      </script>
+      <aktionariat-subscribe newsletter="AKT"></aktionariat-subscribe>
     </div>
 
     <div class="container mt-5" data-aos="zoom-in">

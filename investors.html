@@ -20,6 +20,7 @@
   <script src="https://code.highcharts.com/modules/data.js"></script>
   <script src="/lib/chart.js"></script>
   <script src="/lib/info.js"></script><script>loadTokenData("AKT");</script>
+  <script src="/lib/subscription.js"></script>
 
   <!-- <link rel="apple-touch-icon" href="/images/logos/logo_aktionariat_180.png" sizes="180x180" />
     <link rel="icon" href="/images/logos/logo_aktionariat_32.png" sizes="32x32" type="image/png" />
@@ -67,6 +68,13 @@
             additional data available for our share tokens.
           </p>
           <aktionariat-chart ticker="DAKT"></aktionariat-chart>
+          <p>
+            If you want to stay informed about significant price changes or other events that concern <a class=aktionariat-namelink>NAME</a>,
+            feel free to subscribe by email below. This service is provided by <a href="https://aktionariat.com">Aktionariat</a>.
+            Token owners subcribed by default and can manage their settings in the Aktionariat app or by clicking the settings link in one of the notification emails.
+          </p>
+
+          <aktionariat-subscribe ticker="AKT"></aktionariat-subscribe>
           <h2>Business Model</h2>
           <p>
             Markets work best when they are free and open. We wnat to make use of the latest legal end technical
