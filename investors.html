@@ -18,9 +18,7 @@
 
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/data.js"></script>
-  <script src="/lib/chart.js"></script>
-  <script src="/lib/info.js"></script><script>loadTokenData("AKT");</script>
-  <script src="/lib/subscription.js"></script>
+  <script src="/lib/widgets.js"></script><script>loadTokenData("AKT");</script>
 
   <!-- <link rel="apple-touch-icon" href="/images/logos/logo_aktionariat_180.png" sizes="180x180" />
     <link rel="icon" href="/images/logos/logo_aktionariat_32.png" sizes="32x32" type="image/png" />
@@ -45,6 +43,11 @@
           <div class="row justify-content-center">
             <h1>Investor Relations</h1>
           </div>
+          <p>This note only serves as our own investor relations page, but also as an example for potential clients.
+            All widgets on this page are configurable and embeddable on any website and can refer to any token we support.
+            Data points like the number of shares in circulation are fetched from the blockchain as the page is loaded, 
+            ensuring that they stay up to date without manual intervention.
+          </p>
           <h2>General</h2>
           <p>
             Aktionariat AG is a Swiss corporation based in Zurich with trade register number <a target="_blank"
@@ -74,7 +77,6 @@
             Token owners subcribed by default and can manage their settings in the Aktionariat app or by clicking the settings link in one of the notification emails.
           </p>
 
-          <aktionariat-subscribe ticker="AKT"></aktionariat-subscribe>
           <h2>Business Model</h2>
           <p>
             Markets work best when they are free and open. We wnat to make use of the latest legal end technical
@@ -92,14 +94,11 @@
             intermediary. For the technically savvy, it will always be possible to enjoy the full spectrum of our
             services, but some users will always prefer doing so through an intermediary of choice.
           </p>
-          <p>
-            <img src="images/metric.png">
-          </p>
+          <aktionariat-metric ticker="DAKT"></aktionariat-metric>
           <h2>Financial Reports</h2>
           <p>
-            TODO: Table with our financials.
+            Aktionariat AG has been founded in June 2020 and has not completed any accounting year yet.
           </p>
-
           <a name="automaton"></a>
           <h2>Automaton</h2>
           <p>
@@ -109,6 +108,7 @@
           <p>
             TODO: Trade history component, showing the latest trades.
           </p>
+          <aktionariat-subscribe ticker="AKT"></aktionariat-subscribe>
           <p>
             If you want to be notified about future trades and other notable events concerning
             us and our shares, you can subscribe to the Aktionariat notification service.
