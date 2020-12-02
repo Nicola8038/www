@@ -18,12 +18,21 @@
 
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/data.js"></script>
-  <script src="/lib/widgets.js"></script><script>loadTokenData("AKT");</script>
+  <script src="/lib/widgets.js"></script>
+  <script>loadTokenData("AKT");</script>
+  <link rel="stylesheet" href="https://aktionariat.com/lib/registration/styles.css">
+  <script src="https://aktionariat.com/lib/registration/registration.js" defer></script>
 
-  <!-- <link rel="apple-touch-icon" href="/images/logos/logo_aktionariat_180.png" sizes="180x180" />
-    <link rel="icon" href="/images/logos/logo_aktionariat_32.png" sizes="32x32" type="image/png" />
-    <link rel="icon" href="/images/logos/logo_aktionariat_16.png" sizes="16x16" type="image/png" /> -->
-  <link rel="icon" href="/images/logos/transparent-logo.png" type="image/png" />
+  <!-- Global site tag (gtag.js) - Google Analytics (without persisted cookies)-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT7SL3ME4L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-DT7SL3ME4L', { 'client_storage': 'none' });
+  </script>
+
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body class="section-dark box">
@@ -44,14 +53,15 @@
             <h1>Investor Relations</h1>
           </div>
           <p>This note only serves as our own investor relations page, but also as an example for potential clients.
-            All widgets on this page are configurable and embeddable on any website and can refer to any token we support.
-            Data points like the number of shares in circulation are fetched from the blockchain as the page is loaded, 
+            All widgets on this page are configurable and embeddable on any website and can refer to any token we
+            support.
+            Data points like the number of shares in circulation are fetched from the blockchain as the page is loaded,
             ensuring that they stay up to date without manual intervention.
           </p>
           <h2>General</h2>
           <p>
             Aktionariat AG is a Swiss corporation based in Zurich with trade register number <a target="_blank"
-            href="https://zh.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-453.438.437">CHE-453.438.437</a>.
+              href="https://zh.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-453.438.437">CHE-453.438.437</a>.
             Its purpose is to enable Swiss companies to create a market for their shares.
           </p>
           <p>
@@ -59,7 +69,8 @@
             Swiss "blockchain law" into force, which we hope to happen by summer 2021.
             In the meantime, feel free to play with our test tokenn named <a class=aktionariat-namelink>NAME</a>.
             There are <var class=aktionariat-totalshares></var> test tokens in circulation, out of which <var
-            class=aktionariat-tokenizedshares></var> have been issued as blockchain-based ERC-20 named <a class=aktionariat-namelink>NAME</a>.
+              class=aktionariat-tokenizedshares></var> have been issued as blockchain-based ERC-20 named <a
+              class=aktionariat-namelink>NAME</a>.
             <var class=aktionariat-treasuryshares></var> tokens are held by the company itself. The current market
             price per share is <var class=aktionariat-price></var>.
             You can trade them directly on this website using our <a href="#automaton">Automaton</a> and a
@@ -67,14 +78,17 @@
           </p>
           <p>
             Regardless of which wallet you prefer to manage your private keys, we recommend to install the Aktionariat
-            app to monitor your portfolio of crypto assets as it is the only wallet that is aware of the 
+            app to monitor your portfolio of crypto assets as it is the only wallet that is aware of the
             additional data available for our share tokens.
           </p>
           <aktionariat-chart ticker="DAKT"></aktionariat-chart>
           <p>
-            If you want to stay informed about significant price changes or other events that concern <a class=aktionariat-namelink>NAME</a>,
-            feel free to subscribe by email below. This service is provided by <a href="https://aktionariat.com">Aktionariat</a>.
-            Token owners subcribed by default and can manage their settings in the Aktionariat app or by clicking the settings link in one of the notification emails.
+            If you want to stay informed about significant price changes or other events that concern <a
+              class=aktionariat-namelink>NAME</a>,
+            feel free to subscribe by email below. This service is provided by <a
+              href="https://aktionariat.com">Aktionariat</a>.
+            Token owners subcribed by default and can manage their settings in the Aktionariat app or by clicking the
+            settings link in one of the notification emails.
           </p>
 
           <h2>Business Model</h2>
@@ -118,21 +132,23 @@
             Registering your address is required to enjoy your rights as a shareholder in relation to
             the company (e.g. receiving dividends or voting at the general assembly).
           </p>
-          <p>
-            TODO: Registration component.
-          </p>
+          <div class="d-flex justify-content-center">
+            <app-registration companyId="77" logoUrl="https://aktionariat.com/images/logo_name_trans.png">
+            </app-registration>
+          </div>
           <p>
             We use the services of <a target="_blank" href="https://aktionariat.com">Aktionariat</a> to
             automatically keep our shareholder registry up to date. By submitting your data you agree
             with Aktionariat processing your data and automatically registering yourself as
-            a shareholder for all share tokens held on the registered address (now and in the future, and 
-            potentially also for tokens of other issuers).
+            a shareholder for all share tokens held on the registered address (now and in the future, and
+            potentially also for tokens of other issuers that you own).
             In case you only want to be registered for specific shares, please get in touch with us.
-            More details can be found in the <a target="_blank" href="https://github.com/aktionariat/contracts/doc/shares.md">
-            share transfer documentation</a> as well as
+            More details can be found in the <a target="_blank"
+              href="https://github.com/aktionariat/contracts/doc/shares.md">
+              share transfer documentation</a> as well as
             the <a target="_blank" href="https://aktionariat.com/terms.html">privacy policy</a> of Aktionariat.
             By default, Aktionariat will also use your email address for important notifications such as an
-            attacker trying to abuse the token recovery feature to get hold of your shares. Additional 
+            attacker trying to abuse the token recovery feature to get hold of your shares. Additional
             notifications such as price updates must be explicitely enabled, e.g. in the Aktionariat app.
           </p>
         </div>

@@ -5,19 +5,26 @@
   <meta charset="utf-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  
+
   <title>Aktionariat</title>
   <meta name="description" content="Notification Settings" />
   <meta name="author" content="Murat Ögat" />
   <meta name="author" content="Luzius Meisser" />
-  
+
   <base href="/">
-<!--   <link rel="icon" href="/images/logos/transparent-logo.png" type="image/png" /> -->
-  <link rel="stylesheet" 
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-        crossorigin="anonymous">
-  
+  <!--   <link rel="icon" href="/images/logos/transparent-logo.png" type="image/png" /> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Global site tag (gtag.js) - Google Analytics (without persisted cookies)-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT7SL3ME4L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-DT7SL3ME4L', { 'client_storage': 'none' });
+  </script>
+
   <script src="./lib/notifications/notifications.js" defer></script>
   <link rel="stylesheet" href="./lib/notifications/styles.css">
 </head>
@@ -30,25 +37,35 @@
     </a>
   </nav>
   <!-- /Header Navbar -->
-  
+
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-sm-9 col-lg-6">
-        
+
         <app-notifications></app-notifications>
-        
+
         <h4>Communication Policy</h4>
         <p class="privacy-policy">
           We might send you two types of emails: our own emails and emails sent on behalf of an issuer.
-          Our own emails include our newsletter, price updates, and other things you can subscribe to and manage here (if applicable).
-          When installing the app, when registering through the registration widget of the issuer or when an issuer adds you to the shareholder registry, you are by default subscribed to all events of shares you hold at the 'reasonable' level.
-          You should note that even if you disable all our notifications on this page, issuers might still use our services to deliver messages to you on behalf of them.
-          This latter category of messages is governed by your agreements with the relevant issuer. In some cases, for example the invitation to the yearly general assembly,
-          the issuer might be required by law to get in touch with you even if you opted out of email communications in general.
+          Our own emails include our newsletter, price updates, and other things you can subscribe to and manage here
+          (if applicable).
+          When installing the app, when registering through the registration widget of the issuer or when an issuer adds
+          you to the shareholder registry, you are by default subscribed to all events of shares you hold at the
+          'reasonable' level.
+          You should note that even if you disable all our notifications on this page, issuers might still use our
+          services to deliver messages to you on behalf of them.
+          This latter category of messages is governed by your agreements with the relevant issuer. In some cases, for
+          example the invitation to the yearly general assembly,
+          the issuer might be required by law to get in touch with you even if you opted out of email communications in
+          general.
+        </p>
+        <p class="privacy-policy">
+          For additional information, please read our <a href="/terms.html">Terms of Service</a>.
         </p>
       </div>
     </div>
   </div>
-  
+
 </body>
+
 </html>
