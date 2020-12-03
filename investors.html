@@ -20,8 +20,8 @@
   <script src="https://code.highcharts.com/modules/data.js"></script>
   <script src="/lib/widgets.js"></script>
   <script>loadTokenData("AKT");</script>
-  <link rel="stylesheet" href="https://aktionariat.com/lib/registration/styles.css">
-  <script src="https://aktionariat.com/lib/registration/registration.js" defer></script>
+  <link rel="stylesheet" href="/lib/registration/styles.css">
+  <script src="/lib/registration/registration.js" defer></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics (without persisted cookies)-->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT7SL3ME4L"></script>
@@ -52,89 +52,102 @@
           <div class="row justify-content-center">
             <h1>Investor Relations</h1>
           </div>
+
           <p>This note only serves as our own investor relations page, but also as an example for potential clients.
             All widgets on this page are configurable and embeddable on any website and can refer to any token we
             support.
-            Data points like the number of shares in circulation are fetched from the blockchain as the page is loaded,
+            Data points like the number of shares in circulation are fetched from the blockchain as the page is
+            loaded,
             ensuring that they stay up to date without manual intervention.
           </p>
-          <h2>General</h2>
-          <p>
-            Aktionariat AG is a Swiss corporation based in Zurich with trade register number <a target="_blank"
-              href="https://zh.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-453.438.437">CHE-453.438.437</a>.
-            Its purpose is to enable Swiss companies to create a market for their shares.
-          </p>
-          <p>
-            We will start to tokenize our shares using our own technology as soon as the Federal Council sets the
-            Swiss "blockchain law" into force, which we hope to happen by summer 2021.
-            In the meantime, feel free to play with our test tokenn named <a class=aktionariat-namelink>NAME</a>.
-            There are <var class=aktionariat-totalshares></var> test tokens in circulation, out of which <var
-              class=aktionariat-tokenizedshares></var> have been issued as blockchain-based ERC-20 named <a
-              class=aktionariat-namelink>NAME</a>.
-            <var class=aktionariat-treasuryshares></var> tokens are held by the company itself. The current market
-            price per share is <var class=aktionariat-price></var>.
-            You can trade them directly on this website using our <a href="#automaton">Automaton</a> and a
-            WalletConnect-compatible wallet.
-          </p>
-          <p>
-            Regardless of which wallet you prefer to manage your private keys, we recommend to install the Aktionariat
-            app to monitor your portfolio of crypto assets as it is the only wallet that is aware of the
-            additional data available for our share tokens.
-          </p>
-          <aktionariat-chart ticker="DAKT"></aktionariat-chart>
-          <p>
-            If you want to stay informed about significant price changes or other events that concern <a
-              class=aktionariat-namelink>NAME</a>,
-            feel free to subscribe by email below. This service is provided by <a
-              href="https://aktionariat.com">Aktionariat</a>.
-            Token owners subcribed by default and can manage their settings in the Aktionariat app or by clicking the
-            settings link in one of the notification emails.
-          </p>
-
-          <h2>Business Model</h2>
-          <p>
-            Markets work best when they are free and open. We wnat to make use of the latest legal end technical
-            developments to create open and liquid markets for securities that hitherto were illiquid and hard to price.
-            Even without trading, having a reliable price indication can unlock substantial value. For example, it
-            creates a credible signal for employees regarding the true value of shares and allows investors to
-            more reliably appreciate how well (or not so well) their portfolio is doing.
-          </p>
-          <p>
-            We believe that being enabler in this market should put us sooner or later into a position where we
-            can capture some of the value we create. However, for the foreseeable future, we strictly prioritize growth
-            and product development over revenue generation. We also decided to put a laser-sharp focus on the technical
-            dimension, leaving legal consulting to partner firm <a target="_blank" href="https://lexr.ch">LEXR</a> and
-            the provision of auxiliary financial services such as the custody of crypto assets to regulated financial
-            intermediary. For the technically savvy, it will always be possible to enjoy the full spectrum of our
-            services, but some users will always prefer doing so through an intermediary of choice.
-          </p>
-          <aktionariat-metric ticker="DAKT"></aktionariat-metric>
-          <h2>Financial Reports</h2>
-          <p>
-            Aktionariat AG has been founded in June 2020 and has not completed any accounting year yet.
-          </p>
-          <a name="automaton"></a>
-          <h2>Automaton</h2>
-          <p>
-            Automaton widget.
-          </p>
-          <h2>Trade History</h2>
-          <p>
-            TODO: Trade history component, showing the latest trades.
-          </p>
-          <p>
-            If you want to be notified about future trades and other notable events concerning
-            us and our shares, you can subscribe to the Aktionariat notification service.
-          </p>
-          <aktionariat-subscribe ticker="AKT"></aktionariat-subscribe>
-          <h2>Registration</h2>
-          <p>
-            Registering your address is required to enjoy your rights as a shareholder in relation to
-            the company (e.g. receiving dividends or voting at the general assembly).
-          </p>
-          <div class="d-flex justify-content-center">
-            <app-registration companyId="77">
-            </app-registration>
+          <div class="mt-5">
+            <h2>General</h2>
+            <p>
+              Aktionariat AG is a Swiss corporation based in Zurich with trade register number <a target="_blank"
+                href="https://zh.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-453.438.437">CHE-453.438.437</a>.
+              Its purpose is to enable Swiss companies to create a market for their shares.
+            </p>
+            <p>
+              We will start to tokenize our shares using our own technology as soon as the Federal Council sets the
+              Swiss "blockchain law" into force, which we hope to happen by summer 2021.
+              In the meantime, feel free to play with our test tokenn named <a class=aktionariat-namelink>NAME</a>.
+              There are <var class=aktionariat-totalshares></var> test tokens in circulation, out of which <var
+                class=aktionariat-tokenizedshares></var> have been issued as blockchain-based ERC-20 named <a
+                class=aktionariat-namelink>NAME</a>.
+              <var class=aktionariat-treasuryshares></var> tokens are held by the company itself. The current market
+              price per share is <var class=aktionariat-price></var>.
+              You can trade them directly on this website using our <a href="#automaton">Automaton</a> and a
+              WalletConnect-compatible wallet.
+            </p>
+            <p>
+              Regardless of which wallet you prefer to manage your private keys, we recommend to install the Aktionariat
+              app to monitor your portfolio of crypto assets as it is the only wallet that is aware of the
+              additional data available for our share tokens.
+            </p>
+            <aktionariat-chart ticker="DAKT"></aktionariat-chart>
+            <p>
+              If you want to stay informed about significant price changes or other events that concern <a
+                class=aktionariat-namelink>NAME</a>,
+              feel free to subscribe by email below. This service is provided by <a
+                href="https://aktionariat.com">Aktionariat</a>.
+              Token owners subcribed by default and can manage their settings in the Aktionariat app or by clicking the
+              settings link in one of the notification emails.
+            </p>
+          </div>
+          <div class="mt-5">
+            <h2>Business Model</h2>
+            <p>
+              Markets work best when they are free and open. We wnat to make use of the latest legal end technical
+              developments to create open and liquid markets for securities that hitherto were illiquid and hard to
+              price.
+              Even without trading, having a reliable price indication can unlock substantial value. For example, it
+              creates a credible signal for employees regarding the true value of shares and allows investors to
+              more reliably appreciate how well (or not so well) their portfolio is doing.
+            </p>
+            <p>
+              We believe that being enabler in this market should put us sooner or later into a position where we
+              can capture some of the value we create. However, for the foreseeable future, we strictly prioritize
+              growth
+              and product development over revenue generation. We also decided to put a laser-sharp focus on the
+              technical
+              dimension, leaving legal consulting to partner firm <a target="_blank" href="https://lexr.ch">LEXR</a> and
+              the provision of auxiliary financial services such as the custody of crypto assets to regulated financial
+              intermediary. For the technically savvy, it will always be possible to enjoy the full spectrum of our
+              services, but some users will always prefer doing so through an intermediary of choice.
+            </p>
+            <aktionariat-metric ticker="DAKT"></aktionariat-metric>
+          </div>
+          <div class="mt-5">
+            <h2>Financial Reports</h2>
+            <p>
+              Aktionariat AG has been founded in June 2020 and has not completed any accounting year yet.
+            </p>
+          </div>
+          <div class="mt-5">
+            <h2>Automaton</h2>
+            <p>
+              Automaton widget.
+            </p>
+          </div>
+          <div class="mt-5">
+            <h2>Trade History</h2>
+            <p>
+              TODO: Trade history component, showing the latest trades.
+            </p>
+            <p>
+              If you want to be notified about future trades and other notable events concerning
+              us and our shares, you can subscribe to the Aktionariat notification service.
+            </p>
+            <aktionariat-subscribe ticker="AKT"></aktionariat-subscribe>
+          </div>
+          <div class="mt-5">
+            <h2>Shareholder Registration</h2>
+            <div class="d-flex justify-content-center">
+              <div class="w-75">
+                <app-registration companyId="77">
+                </app-registration>
+              </div>
+            </div>
           </div>
         </div>
       </div>
