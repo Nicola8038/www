@@ -19,7 +19,7 @@
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/data.js"></script>
   <script src="/lib/widgets.js"></script>
-  <script>loadTokenData("AKT");</script>
+  <script defer>loadTokenData("AKT");</script>
   <link rel="stylesheet" href="/lib/registration/styles.css">
   <script src="/lib/registration/registration.js" defer></script>
 
@@ -53,7 +53,7 @@
             <h1>Investor Relations</h1>
           </div>
 
-          <p>This note only serves as our own investor relations page, but also as an example for potential clients.
+          <p>This not only serves as our own investor relations page, but also as an example for potential clients.
             All widgets on this page are configurable and embeddable on any website and can refer to any token we
             support.
             Data points like the number of shares in circulation are fetched from the blockchain as the page is
@@ -73,10 +73,10 @@
               In the meantime, feel free to play with our test tokenn named <a class=aktionariat-namelink>NAME</a>.
               There are <var class=aktionariat-totalshares></var> test tokens in circulation, out of which <var
                 class=aktionariat-tokenizedshares></var> have been issued as blockchain-based ERC-20 named <a
-                class=aktionariat-namelink>NAME</a>.
+                target="_blank" class=aktionariat-contractlink><var class=aktionariat-name></var></a>.
               <var class=aktionariat-treasuryshares></var> tokens are held by the company itself. The current market
               price per share is <var class=aktionariat-price></var>.
-              You can trade them directly on this website using our <a href="#automaton">Automaton</a> and a
+              You can trade them directly on this website using our <a href="#market">market widget</a> and a
               WalletConnect-compatible wallet.
             </p>
             <p>
@@ -123,8 +123,8 @@
               Aktionariat AG has been founded in June 2020 and has not completed any accounting year yet.
             </p>
           </div>
-          <div class="mt-5">
-            <h2>Automaton</h2>
+          <div id="market" class="mt-5">
+            <h2>Market Maker</h2>
             <p>
               Automaton widget.
             </p>
@@ -134,16 +134,17 @@
             <p>
               TODO: Trade history component, showing the latest trades.
             </p>
-            <p>
+            <div>
+              The complete trade history is available as <a target="_blank" class="aktionariat-tradesfile">csv file</a>.
               If you want to be notified about future trades and other notable events concerning
               us and our shares, you can subscribe to the Aktionariat notification service.
-            </p>
+            </div>
             <aktionariat-subscribe ticker="AKT"></aktionariat-subscribe>
           </div>
           <div class="mt-5">
             <h2>Shareholder Registration</h2>
             <div class="d-flex justify-content-center">
-              <div class="w-75">
+              <div class="w-auto" style="max-width: 666px">
                 <app-registration companyId="77">
                 </app-registration>
               </div>
