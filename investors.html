@@ -27,7 +27,6 @@
   <script src="/lib/widgets.js"></script>
   <script>loadTokenData("DAKT");</script>
   <script src="/lib/registration/registration.js"></script>
-  <link rel="stylesheet" href="/lib/registration/styles.css" />
   <link rel="stylesheet" href="/css/styles2.css" />
 
   <!-- Global site tag (gtag.js) - Google Analytics (without persisted cookies)-->
@@ -65,7 +64,7 @@
             Data points like the number of shares in circulation are fetched from the blockchain as the page is
             loaded, ensuring that they stay up to date without manual intervention.
           </p>
-          <akt-chart ticker="DAKT"></akt-chart>
+          <akt-chart ticker="DAKT" lineColor="#efcb68"></akt-chart>
           <div class="mt-5">
             <h2>General</h2>
             <p>
@@ -111,7 +110,7 @@
               services without relying on third parties, but some users find it more convenient to do so via
               an intermediary of choice.
             </p>
-            <akt-metric ticker="DAKT"></akt-metric>
+            <akt-metric ticker="DAKT" lineColor="#efcb68"></akt-metric>
           </div>
           <div class="mt-5">
             <h2>Financial Reports</h2>
@@ -129,7 +128,7 @@
           <div class="mt-5">
             <h2>Trade History</h2>
             <div class="mb-3">
-              <akt-trades ticker="DAKT"></akt-trades>
+              <akt-trades ticker="DAKT" tableClass="table-dark"></akt-trades>
             </div>
             <div class="mb-3">
               The complete trade history is available as <a target="_blank" class="akt-tradesfile">csv file</a>.
