@@ -61,11 +61,13 @@
           <div class="row justify-content-center">
             <h1>Investor Relations</h1>
           </div>
-          <p>This page not only serves as our own investor relations page, but also as an example for other issuers.
-            All widgets on this page are configurable and embeddable on any website and can refer to any token we
-            support. Data points like the number of shares in circulation are fetched from the blockchain as the page is
+          <p>This page serves as our own investor relations page as well as an example for other issuers.
+            All charts, tables, forms, and other widgets on this page are freely configurable, allowing issuers
+            to easily create their own investor relations page for their own token.
+            Data points like the number of shares in circulation are fetched from the blockchain as the page is
             loaded, ensuring that they stay up to date without manual intervention.
           </p>
+          <akt-chart ticker="DAKT"></akt-chart>
           <div class="mt-5">
             <h2>General</h2>
             <p>
@@ -75,8 +77,8 @@
             </p>
             <p>
               We will start to tokenize our shares using our own technology as soon as the Federal Council sets the
-              Swiss "blockchain law" into force, which is planned to happen by summer 2021.
-              In the meantime, feel free to play with our test tokenn named <a class=akt-namelink>NAME</a>.
+              Swiss "blockchain law" into force, which should happen some time in 2021.
+              In the meantime, feel free to play with our test token.
               There are <var class=akt-totalshares></var> test tokens in circulation, out of which <var
                 class=akt-tokenizedshares></var> have been issued as blockchain-based ERC-20 named <a
                 target="_blank" class=akt-contractlink><var class=akt-name></var></a>.
@@ -87,39 +89,29 @@
             </p>
             <p>
               Regardless of which wallet you prefer to manage your private keys, we recommend to install the Aktionariat
-              app to monitor your portfolio of crypto assets as it is the only wallet that is aware of the
-              additional data available for our share tokens.
-            </p>
-            <akt-chart ticker="DAKT"></akt-chart>
-            <p>
-              If you want to stay informed about significant price changes or other events that concern <a
-                class=akt-namelink>NAME</a>,
-              feel free to subscribe by email below. This service is provided by <a
-                href="https://aktionariat.com">Aktionariat</a>.
-              Token owners subcribed by default and can manage their settings in the Aktionariat app or by clicking the
-              settings link in one of the notification emails.
+              app (<a href="https://apps.apple.com/ch/app/aktionariat/id1518326813?l=en">for iOS</a>, Android follows)
+              to monitor your portfolio of crypto assets. The Aktionariat app can also display shares held in traditional
+              form and assist existing shareholders in converting them into tokenized shares.
             </p>
           </div>
           <div class="mt-5">
             <h2>Business Model</h2>
             <p>
-              Markets work best when they are free and open. We wnat to make use of the latest legal end technical
-              developments to create open and liquid markets for securities that hitherto were illiquid and hard to
-              price.
-              Even without trading, having a reliable price indication can unlock substantial value. For example, it
-              creates a credible signal for employees regarding the true value of shares and allows investors to
-              more reliably appreciate how well (or not so well) their portfolio is doing.
+              Markets work best when they are free and open. We leverage the latest legal and technical
+              developments to create liquid markets for securities that hitherto were illiquid and hard to price.
+              Even for those not interested in selling their shares, having a reliable price signal can unlock substantial value.
+              For example, it creates a point of orientation for employees regarding the true value of their shares and
+              enables investors to more reliably gauge how well (or not so well) their portfolio is doing.
             </p>
             <p>
               We believe that being enabler in this market should put us sooner or later into a position where we
               can capture some of the value we create. However, for the foreseeable future, we strictly prioritize
-              growth
-              and product development over revenue generation. We also decided to put a laser-sharp focus on the
-              technical
-              dimension, leaving legal consulting to partner firm <a target="_blank" href="https://lexr.ch">LEXR</a> and
-              the provision of auxiliary financial services such as the custody of crypto assets to regulated financial
-              intermediary. For the technically savvy, it will always be possible to enjoy the full spectrum of our
-              services, but some users will always prefer doing so through an intermediary of choice.
+              growth and product development over revenue generation. We also decided to put a laser-sharp focus on the
+              technical dimension, leaving legal consulting to partner firm <a target="_blank" href="https://lexr.ch">LEXR</a>
+              and the provision of auxiliary financial services such as the custody of crypto assets to regulated financial
+              intermediaries. For the technically savvy, it will always be possible to enjoy the full spectrum of our
+              services without relying on third parties, but some users find it more convenient to do so via
+              an intermediary of choice.
             </p>
             <akt-metric ticker="DAKT"></akt-metric>
           </div>
@@ -127,6 +119,7 @@
             <h2>Financial Reports</h2>
             <p>
               Aktionariat AG has been founded in June 2020 and has not completed any accounting year yet.
+              All yearly financial reports are published here.
             </p>
           </div>
           <div id="market" class="mt-5">
@@ -142,8 +135,9 @@
             </div>
             <div class="mb-3">
               The complete trade history is available as <a target="_blank" class="akt-tradesfile">csv file</a>.
-              If you want to be notified about future trades and other notable events concerning
-              us and our shares, you can subscribe to the Aktionariat notification service.
+              If you want to be notified about future trades and other notable events concerning our share tokens,
+              you can subscibe below. This notification service is provided by <a href="https://aktionariat.com">
+              Aktionariat</a>, who monitor the blockchain for us.
             </div>
             <akt-subscribe ticker="AKT"></akt-subscribe>
           </div>
@@ -154,6 +148,14 @@
                 <app-registration companyId="77">
                 </app-registration>
               </div>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h2>Token Terms</h2>
+            <div>
+              TODO: here, we should place links to the articles of association, the issuance decision by the board of directors,
+              the shareholder agreement, and the insider trading rules. Further, all of them should be explained in short paragraph,
+              in particular the relation between the draggable and the plain token.
             </div>
           </div>
         </div>
