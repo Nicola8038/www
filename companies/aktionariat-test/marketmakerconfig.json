@@ -2,6 +2,7 @@
   "companyID": 77,
   "companyName": "Aktionariat AG Test",
   "marketMakerAddress": "0x5Ab2Dbe3e08ac6EFCBEFea98b70af91A2b76281a",
+  "shareAddress": "0xbf0e13ab37573ABB68ff9C33Ee9FF8148b8a61E2",
   "xchfAddress": "0xB4272071eCAdd69d933AdcD19cA99fe80664fc08",
   "uniswapPairAddress": "0x4da3360cbdD27F2928a4e6fDFEF86f274Cd2cCC8",
   "nodeURL": "https://mainnet.infura.io/v3/0ad504397bca47a6bf0c70a57c2ccfbf",
