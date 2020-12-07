@@ -14,13 +14,23 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/styles2.css" />
-
+  
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/data.js"></script>
+
+  <!-- For the trades table -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.12.1/css/all.min.css">
+
   <script src="/lib/widgets.js"></script>
   <script>loadTokenData("AKT");</script>
-  <script src="/lib/registration/registration.js" defer></script>
+  <script src="/lib/registration/registration.js"></script>
+  <link rel="stylesheet" href="/lib/registration/styles.css" />
+  <script src="/lib/trades/trades.js"></script>
+  <link rel="stylesheet" href="/lib/trades/styles.css" />
+  <link rel="stylesheet" href="/css/styles2.css" />
 
   <!-- Global site tag (gtag.js) - Google Analytics (without persisted cookies)-->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT7SL3ME4L"></script>
@@ -66,12 +76,12 @@
             <p>
               We will start to tokenize our shares using our own technology as soon as the Federal Council sets the
               Swiss "blockchain law" into force, which is planned to happen by summer 2021.
-              In the meantime, feel free to play with our test tokenn named <a class=aktionariat-namelink>NAME</a>.
-              There are <var class=aktionariat-totalshares></var> test tokens in circulation, out of which <var
-                class=aktionariat-tokenizedshares></var> have been issued as blockchain-based ERC-20 named <a
-                target="_blank" class=aktionariat-contractlink><var class=aktionariat-name></var></a>.
-              <var class=aktionariat-treasuryshares></var> tokens are held by the company itself. The current market
-              price per share is <var class=aktionariat-price></var>.
+              In the meantime, feel free to play with our test tokenn named <a class=akt-namelink>NAME</a>.
+              There are <var class=akt-totalshares></var> test tokens in circulation, out of which <var
+                class=akt-tokenizedshares></var> have been issued as blockchain-based ERC-20 named <a
+                target="_blank" class=akt-contractlink><var class=akt-name></var></a>.
+              <var class=akt-treasuryshares></var> tokens are held by the company itself. The current market
+              price per share is <var class=akt-price></var>.
               You can trade them directly on this website using our <a href="#market">market widget</a> and a
               WalletConnect-compatible wallet.
             </p>
@@ -80,10 +90,10 @@
               app to monitor your portfolio of crypto assets as it is the only wallet that is aware of the
               additional data available for our share tokens.
             </p>
-            <aktionariat-chart ticker="DAKT"></aktionariat-chart>
+            <akt-chart ticker="DAKT"></akt-chart>
             <p>
               If you want to stay informed about significant price changes or other events that concern <a
-                class=aktionariat-namelink>NAME</a>,
+                class=akt-namelink>NAME</a>,
               feel free to subscribe by email below. This service is provided by <a
                 href="https://aktionariat.com">Aktionariat</a>.
               Token owners subcribed by default and can manage their settings in the Aktionariat app or by clicking the
@@ -111,7 +121,7 @@
               intermediary. For the technically savvy, it will always be possible to enjoy the full spectrum of our
               services, but some users will always prefer doing so through an intermediary of choice.
             </p>
-            <aktionariat-metric ticker="DAKT"></aktionariat-metric>
+            <akt-metric ticker="DAKT"></akt-metric>
           </div>
           <div class="mt-5">
             <h2>Financial Reports</h2>
@@ -127,15 +137,15 @@
           </div>
           <div class="mt-5">
             <h2>Trade History</h2>
-            <p>
-              TODO: Trade history component, showing the latest trades.
-            </p>
-            <div>
-              The complete trade history is available as <a target="_blank" class="aktionariat-tradesfile">csv file</a>.
+            <div class="mb-3">
+              <akt-trades ticker="DAKT"></akt-trades>
+            </div>
+            <div class="mb-3">
+              The complete trade history is available as <a target="_blank" class="akt-tradesfile">csv file</a>.
               If you want to be notified about future trades and other notable events concerning
               us and our shares, you can subscribe to the Aktionariat notification service.
             </div>
-            <aktionariat-subscribe ticker="AKT"></aktionariat-subscribe>
+            <akt-subscribe ticker="AKT"></akt-subscribe>
           </div>
           <div class="mt-5">
             <h2>Shareholder Registration</h2>
