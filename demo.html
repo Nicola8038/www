@@ -44,6 +44,7 @@
     <!-- / The SEO Framework by Sybre Waaijer | 4.78ms meta | 1.34ms boot -->
 
     <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="stylesheet" href="/lib/marketmaker/styles.css" />
     <link rel='stylesheet' id='app-style-css'
         href='https://www.bitcoinsuisse.com/wp/../wp-content/themes/btcs/dist/styles.min.css?ver=1606476322'
         type='text/css' media='all' />
@@ -1140,7 +1141,7 @@
  
                         <script src="/lib/widgets.js"></script>
                         <script>loadTokenData("BTCT");</script>
-                        <script src="/lib/registration/registration.js"></script>
+                        <!--<script src="/lib/registration/registration.js"></script>-->
 
                         <div class="body-s">
                             <p>Bitcoin Suisse benefits from a strong and stable shareholder base with a long term view
@@ -1162,9 +1163,7 @@
 
                             <div id="market" class="mt-5">
                                 <h4>Market Maker</h4>
-                                <p>
-                                    Automaton widget.
-                                </p>
+                                <app-market-maker company="bitcoin-suisse-test"></app-market-maker>
                             </div>
                             <div class="mt-5">
                                 <h4>Trade History</h4>
@@ -1644,6 +1643,7 @@
         </div>
     </footer>
     <script type='text/javascript' src='https://www.bitcoinsuisse.com/wp/../wp-content/themes/btcs/dist/bundle.min.js?ver=1606476322'></script>
+    <script src="/lib/marketmaker/marketmaker.js" defer=""></script>
 </body>
 
 </html>
