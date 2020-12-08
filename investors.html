@@ -26,8 +26,8 @@
 
   <script src="/lib/widgets.js"></script>
   <script>loadTokenData("DAKT");</script>
-  <script src="/lib/registration/registration.js"></script>
   <link rel="stylesheet" href="/css/styles2.css" />
+  <link rel="stylesheet" href="/lib/marketmaker/styles.css" />
 
   <!-- Global site tag (gtag.js) - Google Analytics (without persisted cookies)-->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT7SL3ME4L"></script>
@@ -121,9 +121,11 @@
           </div>
           <div id="market" class="mt-5">
             <h2>Market Maker</h2>
-            <p>
-              Automaton widget.
-            </p>
+            <div class="d-flex justify-content-center">
+              <div class="w-auto" style="max-width: 666px; margin-top: 20px">
+                <app-market-maker company="aktionariat-test"></app-market-maker>
+              </div>
+            </div>
           </div>
           <div class="mt-5">
             <h2>Trade History</h2>
@@ -170,6 +172,8 @@
   </footer>
 
   <!-- Footer -->
+  <script src="/lib/marketmaker/marketmaker.js" defer=""></script>
+  <!--<script src="/lib/registration/registration.js" defer=""></script>-->
 </body>
 
 </html>
