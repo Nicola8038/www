@@ -13,9 +13,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
+  
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/data.js"></script>
 
@@ -53,21 +51,24 @@
   <!-- /Header Navbar -->
 
   <main role="main" class="row content container-fullwidth">
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-2">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-9">
           <div class="row justify-content-center">
-            <h1>Investor Relations</h1>
+            <h1 class="py-2">Investor Relations</h1>
           </div>
-          <p>This page serves as our own investor relations page as well as an example for other issuers.
+          <p>This page serves as our own investor relations page as well as an example for other issuers using our platform.</p>
+          <p>
             All charts, tables, forms, and other widgets on this page are freely configurable, allowing issuers
             to easily create their own investor relations page for their own token.
             Data points like the number of shares in circulation are fetched from the blockchain as the page is
             loaded, ensuring that they stay up to date without manual intervention.
           </p>
-          <akt-chart ticker="DAKT" lineColor="#efcb68"></akt-chart>
+          <div class="py-2">
+            <akt-chart ticker="DAKT" lineColor="#efcb68"></akt-chart>
+          </div>
           <div class="mt-5">
-            <h2>General</h2>
+            <h3>General</h3>
             <p>
               Aktionariat AG is a Swiss corporation based in Zurich with trade register number <a target="_blank"
                 href="https://zh.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-453.438.437">CHE-453.438.437</a>.
@@ -77,8 +78,8 @@
               We will start to tokenize our shares using our own technology as soon as the Federal Council sets the
               Swiss "blockchain law" into force, which should happen some time in 2021.
               In the meantime, feel free to play with our test token.
-              There are <var class=akt-totalshares></var> test tokens in circulation, out of which <var
-                class=akt-tokenizedshares></var> have been issued as blockchain-based ERC-20 named <a
+              There are <var class=akt-totalshares> </var> test tokens in circulation, out of which <var
+                class=akt-tokenizedshares> </var> have been issued as blockchain-based ERC-20 named <a
                 target="_blank" class=akt-contractlink><var class=akt-name></var></a>.
               <var class=akt-treasuryshares></var> tokens are held by the company itself. The current market
               price per share is <var class=akt-price></var>.
@@ -93,7 +94,7 @@
             </p>
           </div>
           <div class="mt-5">
-            <h2>Business Model</h2>
+            <h3>Business Model</h3>
             <p>
               Markets work best when they are free and open. We leverage the latest legal and technical
               developments to create liquid markets for securities that hitherto were illiquid and hard to price.
@@ -111,53 +112,65 @@
               services without relying on third parties, but some users find it more convenient to do so via
               an intermediary of choice.
             </p>
-            <akt-metric ticker="DAKT" lineColor="#efcb68"></akt-metric>
+            <div class="py-2">
+              <akt-metric ticker="DAKT" lineColor="#efcb68"></akt-metric>
+            </div>
           </div>
           <div class="mt-5">
-            <h2>Financial Reports</h2>
+            <h3>Financial Reports</h3>
             <p>
               Aktionariat AG has been founded in June 2020 and has not completed any accounting year yet.
-              All yearly financial reports are published here.
+              All yearly financial reports will be published here.
             </p>
           </div>
           <div id="market" class="mt-5">
-            <h2>Market Maker</h2>
-            <div class="d-flex justify-content-center">
-              <div class="w-75">
+            <h3>Market Maker</h3>
+            <div class="d-flex">
+              <div class="w-100 mr-4">
+                <p>The Market Maker is the central component of the investor relations page, enabling a direct two-way market for company shares on your website.</p>
+                <p>Investors can use the Aktionariat mobile app, MetaMask or any other WalletConnect compatible Ethereum wallet to interact with the Market Maker and complete their transactions without any need for intermediaries.</p>
+                <p>Please note that our own Market Maker is distributing only Test Aktionariat AG Shares (DAKT) for the time being.</p>
+              </div>
+              <div class="w-600">
                 <app-market-maker company="aktionariat-test"></app-market-maker>
               </div>
             </div>
           </div>
           <div class="mt-5">
-            <h2>Trade History</h2>
+            <h3>Trade History</h3>
+            <p>The trade history widget shows the most recent share transactions. It is automatically updated by on-chain data. The complete trade history is also available for download as a <a target="_blank" class="akt-tradesfile">csv file</a>.</p>
             <div class="mb-3">
               <akt-trades ticker="DAKT" tableClass="table-dark"></akt-trades>
             </div>
-            <div class="mb-3">
-              The complete trade history is available as <a target="_blank" class="akt-tradesfile">csv file</a>.
-              If you want to be notified about future trades and other notable events concerning our share tokens,
-              you can subscibe below. This notification service is provided by <a href="https://aktionariat.com">
-              Aktionariat</a>, who monitor the blockchain for us.
+            <div class="py-2">
+              <p>
+                If you want to be notified about future trades and other notable events concerning our share tokens,
+                you can subscibe below. This notification service is provided by <a href="https://aktionariat.com">
+                Aktionariat</a>, who monitor the blockchain for us.
+              </p>
             </div>
             <akt-subscribe ticker="AKT"></akt-subscribe>
           </div>
           <div class="mt-5">
-            <h2>Shareholder Registration</h2>
+            <h3>Shareholder Registration</h3> 
+            <p>
+              The registration widget enables easy registration of shareholder information on the investor relations page. 
+              Please also note that for investors using the Aktionariat mobile app with a completed profile, the registration is automatically done without the need for any additional steps.
+            </p>
             <div class="d-flex justify-content-center">
               <div class="w-auto" style="max-width: 666px">
-                <iframe src="/lib/registration/regframe77.html"  frameborder="0" scrolling="no"  width="666" height="500"></iframe>
+                <iframe src="/lib/registration/regframe77.html"  frameborder="0" scrolling="no"  width="600" height="340"></iframe>
 <!--                 <app-registration companyId="77">
                 </app-registration> -->
               </div>
             </div>
           </div>
-          <div class="mt-5">
-            <h2>Token Terms</h2>
-            <div>
-              TODO: here, we should place links to the articles of association, the issuance decision by the board of directors,
-              the shareholder agreement, and the insider trading rules. Further, all of them should be explained in short paragraph,
-              in particular the relation between the draggable and the plain token.
-            </div>
+          <div>
+            <h3>Token Terms</h3>
+            <p>
+              The articles of association, the issuance decision by the board of directors, the shareholder agreement, and the insider trading rules
+              should be placed here together with their short explanations. In particular, this is a good place to explain the relation between the draggable and the plain token.
+            </p>
           </div>
         </div>
       </div>

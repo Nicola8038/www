@@ -44,6 +44,12 @@ a:active {
   /* border-color: #F5DFA3; */ /*  #202a32; */
 }
 
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: medium;
+  font-weight: 400;
+}
+
 /* .card-title {
   color: #efcb68;
 } */
