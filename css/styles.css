@@ -75,6 +75,8 @@ body {
 
 .section-dark h3 {
   color: #d2ac67;
+  font-family: "Montserrat", serif;
+  font-size: large;
 }
 
 .profile-photo {
