@@ -1,0 +1,22 @@
+footer {
+  margin: 50px 0 20px 0;
+}
+
+.footer__links {
+  text-align: center;
+}
+
+  .footer__links li {
+    list-style: none;
+    display: inline-block;
+  }
+
+    .footer__links li+li::before {
+      content: '– ';
+      color: #efcb68;
+      margin: 0 10px;
+    }
+
+  .footer_links a {
+    font-weight: lighter;
+  }
