@@ -1,0 +1,22 @@
+{
+  "name": "aktionariat-www",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ws -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aktionariat/www.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aktionariat/www/issues"
+  },
+  "homepage": "https://github.com/aktionariat/www#readme",
+  "devDependencies": {
+    "local-web-server": "^4.2.1"
+  }
+}
