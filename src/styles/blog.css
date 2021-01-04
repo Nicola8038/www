@@ -1,0 +1,16 @@
+.blog p {
+  font-weight: lighter;
+}
+
+article {
+  margin-top: 50px;
+}
+
+  article::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100px;
+    margin: 30px auto;
+    border-bottom: 1px dotted #efcb68;
+  }
