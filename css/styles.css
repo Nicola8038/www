@@ -89,24 +89,24 @@ body {
   height: 45px;
   width: auto;
 }
-  
+
 .navbar {
   min-height: 90px;
   background-color: #202a32;
 }
-  
+
 .navbar-dark .nav-item .nav-link {
   color: white;
 }
-  
+
 .navbar-dark .nav-item:hover .nav-link {
   color: #d2ac67;
 }
-  
+
 .navbar-dark .nav-item .active {
   color: #d2ac67;
 }
-  
+
 .signin-button {
   background-color: #d2ac67;
 }
