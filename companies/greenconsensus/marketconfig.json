@@ -1,0 +1,11 @@
+{
+  "companyID": 264,
+  "companyName": "Green Consensus SA",
+  "marketAddress": "0xCdd35a972E1ccCb58aF9Fd98A235E30BE647C55A",
+  "xchfAddress": "0xB4272071eCAdd69d933AdcD19cA99fe80664fc08",
+  "uniswapPairAddress": "0x4da3360cbdD27F2928a4e6fDFEF86f274Cd2cCC8",
+  "nodeURL": "https://mainnet.infura.io/v3/0ad504397bca47a6bf0c70a57c2ccfbf",
+  "logoURL": "https://aktionariat.com/companies/greenconsensus/gc_logo_trans.png",
+  "termsURL": "https://www.greenconsensus.ch",
+  "chainID": 1
+}
