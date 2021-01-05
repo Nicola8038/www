@@ -25,7 +25,7 @@
 
   <script src="/lib/widgets.js"></script>
   <script>loadTokenData("DAKT");</script>
-  <link rel="stylesheet" href="/lib/marketmaker/styles.css" />
+  <link rel="stylesheet" href="/lib/market/styles.css" />
   <link rel="stylesheet" href="/css/styles2.css" />
 
   <!-- Global site tag (gtag.js) - Google Analytics (without persisted cookies)-->
@@ -124,15 +124,16 @@
             </p>
           </div>
           <div id="market" class="mt-5">
-            <h3>Market Maker</h3>
+            <h3>Market</h3>
             <div class="d-flex">
-              <div class="w-100 mr-4">
-                <p>The Market Maker is the central component of the investor relations page, enabling a direct two-way market for company shares on your website.</p>
-                <p>Investors can use the Aktionariat mobile app, MetaMask or any other WalletConnect compatible Ethereum wallet to interact with the Market Maker and complete their transactions without any need for intermediaries.</p>
-                <p>Please note that our own Market Maker is distributing only Test Aktionariat AG Shares (DAKT) for the time being.</p>
+              <div class="w-600 mr-4">
+                <app-market company="aktionariat-test"></app-market>
               </div>
-              <div class="w-600">
-                <app-market-maker company="aktionariat-test"></app-market-maker>
+              <div class="w-100">
+                <p>The market is the central component of the investor relations page, enabling investors to buy and sell shares directly from the company.</p>
+                <p>Investors can use the Aktionariat mobile app, MetaMask or any other WalletConnect compatible Ethereum wallet to interact with the market widget and complete their transactions without any need for intermediaries.</p>
+                <p>The market widget is powered by a <a href="https://github.com/aktionariat/contracts/blob/master/src/Market.sol">open-source smart contract</a> and does depend on Aktionariat's servers to function.</p>
+                <p>Note that our own market is distributing only Test Aktionariat AG Shares (DAKT) for the time being.</p>
               </div>
             </div>
           </div>
@@ -187,7 +188,7 @@
   </footer>
 
   <!-- Footer -->
-  <script src="/lib/marketmaker/marketmaker.js" defer=""></script>
+  <script src="/lib/market/market.js" defer=""></script>
   <!--<script src="/lib/registration/registration.js" defer=""></script>-->
 </body>
 
