@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Registration Widget</title>
+  <meta name="description" content="Aktionariat Registration Widget" />
+  <meta name="author" content="Murat Ögat" />
+  <meta name="author" content="Luzius Meisser" />
+  
+  <link rel="stylesheet" href="http://192.168.86.25:5500/lib/registration/styles.css">
+  <script src="https://aktionariat.com/lib/registration/registration.js" defer></script>
+</head>
+
+<body>
+  <div id="container" class="widget-container">
+    <!-- Here comes the widget -->
+  </div>
+</body>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const companyId = urlParams.get('company');
+  if (companyId) {
+    document.getElementById("container").innerHTML = '<app-registration companyId="' + companyId + '"></app-registration>';
+  }
+  else {
+    document.getElementById("container").innerHTML = "Company parameter is required.";
+  }
+</script>
+
+</html>
