@@ -10,6 +10,12 @@
   font-weight: 100;
 }
 
+.chart-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #F5F5F5;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .section-dark h1 {
   color: #efcb68; /*  #d2ac67 */
   font-family: 'Montserrat', sans-serif;
