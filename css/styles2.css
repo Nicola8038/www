@@ -16,6 +16,16 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.widget-parent-body {
+  background-color: #CACACA;
+  color: black;
+}
+
+.widget-container {
+  max-width: 600px;
+  background-color: white;
+}
+
 .section-dark h1 {
   color: #efcb68; /*  #d2ac67 */
   font-family: 'Montserrat', sans-serif;
