@@ -10,25 +10,25 @@
   <meta name="author" content="Aktionariat AG" />
   <meta name="author" content="Murat Ögat" />
   <meta name="author" content="Luzius Meisser" />
-  
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
   integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  
+
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/data.js"></script>
-  
+
   <!-- For the trades table -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.css" rel="stylesheet">
   <script src="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.12.1/css/all.min.css">
-  
+
   <script src="/lib/widgets.js"></script>
   <script>loadTokenData("DAKT");</script>
   <link rel="stylesheet" href="/lib/market/styles.css" />
   <link rel="stylesheet" href="/css/styles2.css" />
   <link rel="stylesheet" href="/src/styles/main.css" />
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics (without persisted cookies)-->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT7SL3ME4L"></script>
   <script>
@@ -37,7 +37,7 @@
     gtag('js', new Date());
     gtag('config', 'G-DT7SL3ME4L', { 'client_storage': 'none' });
   </script>
-  
+
   <link rel="icon" href="favicon.ico">
 </head>
 
@@ -57,10 +57,10 @@
       <div class="col-12">
         <h1 class="py-2">Investor Relations</h1>
         <p>Aktionariat provides a platform for issuing, managing and trading tokenized shares.</p>
-        <p>Blockchain technology enables a direct market between the company and its investors, and also serves as a distributed ledger. 
+        <p>Blockchain technology enables a direct market between the company and its investors, and also serves as a distributed ledger.
           Issued share tokens legally represent company shares <a href="https://www.admin.ch/gov/en/start/documentation/media-releases.msg-id-81563.html">under Swiss law</a>.</p>
           <p>If you would like to join our shareholders, tokenized shares of Aktionariat AG (DAKS) are available to trade in our Market Widget on this page.</p>
-          
+
           <div class="mt-5">
             <h3>General</h3>
             <p>
@@ -88,7 +88,7 @@
               form and assist existing shareholders in converting them into tokenized shares.
             </p>
           </div>
-          
+
           <div class="mt-5">
             <h3>Business Model</h3>
             <p>
@@ -109,7 +109,7 @@
               an intermediary of choice.
             </p>
           </div>
-          
+
           <div class="mt-5">
             <h3>Financial Reports</h3>
             <p>
@@ -117,7 +117,7 @@
               All yearly financial reports will be published here.
             </p>
           </div>
-          
+
           <div class="mt-5">
             <h3>Market</h3>
             <app-market market="0x5Ab2Dbe3e08ac6EFCBEFea98b70af91A2b76281a"></app-market>
@@ -128,7 +128,7 @@
               <p>Note that our own market is distributing only Test Aktionariat AG Shares (DAKT) for the time being.</p>
             </div>
           </div>
-          
+
           <div class="mt-5">
             <h3>Performance Indicators</h3>
             <p>The price graph shows historical price of Tokenized Aktionariat AG Shares (DAKT).</p>
@@ -140,33 +140,33 @@
               <akt-metric ticker="DAKT" lineColor="#efcb68" label="Daily Trade Volume in Swiss Francs"></akt-metric>
             </div>
           </div>
-          
+
           <div class="mt-5 mb-3">
             <h3>Trade History</h3>
             <p>The trade history widget shows the most recent share transactions. It is automatically updated by on-chain data. The complete trade history is also available for download as a <a target="_blank" class="akt-tradesfile">csv file</a>.</p>
             <akt-trades tableClass="table-dark"></akt-trades>
           </div>
-          
+
           <div class="mt-5">
-            <h3>Shareholder Registry</h3> 
+            <h3>Shareholder Registry</h3>
             <p>
-              The registration widget enables easy registration of shareholder information on the investor relations page. 
+              The registration widget enables easy registration of shareholder information on the investor relations page.
               Please also note that for investors using the Aktionariat mobile app with a completed profile, the registration is automatically done without the need for any additional steps.
             </p>
             <div style="background-color: #0e1d1d; max-width: 600px;">
               <app-registration companyId="77"></app-registration>
             </div>
           </div>
-          
+
           <div class="mt-4">
-            <h3>Stay Updated</h3> 
+            <h3>Stay Updated</h3>
             <p>
               If you want to be notified about future trades and other notable events concerning our share tokens,
               you can subscibe below. This notification service can also help you track trades for your share tokens automatically.
             </p>
             <akt-subscribe></akt-subscribe>
           </div>
-          
+
           <div class="mt-5">
             <h3>Token Terms</h3>
             <p>
@@ -179,10 +179,10 @@
       </div>
     </div>
   </main>
-  
+
   <footer class="container page-footer">
     <ul class="footer__links">
-      <li><a href="index.html">Aktionariat</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="terms.html">Terms</a></li>
       <li><a href="investors.html">Investor Relations</a></li>
       <li><a href="blog.html">Blog</a></li>
@@ -194,7 +194,8 @@
       </div>
     </div>
   </footer>
-  
+
+
   <!-- Footer -->
   <script src="/lib/market/market.js" defer=""></script>
   <script src="/lib/registration/registration.js" defer=""></script>
