@@ -1,2 +1,17 @@
 @import url('blog.css');
 @import url('footer.css');
+
+.about h2,
+.blog h2 {
+  font-size: 1.4rem;
+}
+
+.centered-profile {
+  margin: auto;
+  width: 33%;
+}
+
+article .blog__readMore,
+.readMore {
+  text-align: center;
+}

@@ -14,3 +14,12 @@ article {
     margin: 30px auto;
     border-bottom: 1px dotted #efcb68;
   }
+
+  article h3 {
+    font-size: 1.05em;
+  }
+
+  article hr {
+    border-top: 1px dotted #dadada;
+    width: 30px;
+  }
