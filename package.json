@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "ws -o",
-    "lint": "eslint 404.html"
+    "htmllint": "htmllint 404.html",
+    "eslint": "eslint 404.html",
+    "lint": "npm run htmllint && npm run eslint"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,13 @@
     "@html-eslint/eslint-plugin": "^0.8.0",
     "@html-eslint/parser": "^0.8.0",
     "eslint": "^7.18.0",
+    "htmllint-cli": "0.0.7",
+    "husky": "^4.3.8",
     "local-web-server": "^4.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   }
 }
