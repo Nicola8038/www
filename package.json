@@ -7,6 +7,7 @@
     "start": "ws -o",
     "htmllint": "htmllint 404.html",
     "eslint": "eslint 404.html",
+    "eslint-fix": "eslint 404.html --fix",
     "lint": "npm run htmllint && npm run eslint"
   },
   "repository": {
