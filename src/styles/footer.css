@@ -4,19 +4,20 @@ footer {
 
 .footer__links {
   text-align: center;
+  padding: 0px;
 }
 
-  .footer__links li {
-    list-style: none;
-    display: inline-block;
-  }
+.footer__links li {
+  list-style: none;
+  display: inline-block;
+}
 
-    .footer__links li+li::before {
-      content: '– ';
-      color: #efcb68;
-      margin: 0 10px;
-    }
+.footer__links li+li::before {
+  content: '– ';
+  color: #efcb68;
+  margin: 0 10px;
+}
 
-  .footer_links a {
-    font-weight: lighter;
-  }
+.footer_links a {
+  font-weight: lighter;
+}
