@@ -1,10 +1,9 @@
 Accessing the Corporate Dashboard
 ===
 
-(Under construction, more information to be added.)
+(Under construction, more information and pictures to be added.)
 
-The corporate dashboard allows board members or issuers to view the shareholder registry and to initiate corporate
-actions. In order to access the corporate dashboard, the following preconditions need to be completed:
+The corporate dashboard allows board members of issuers to view the shareholder registry and to initiate corporate actions. In order to access the corporate dashboard, the following preconditions need to be completed:
 
 1. Your organization needs to be a client of Aktionariat. To become a client, get in touch with nicola@aktionariat.com .
 
