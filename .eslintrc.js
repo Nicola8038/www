@@ -5,10 +5,9 @@ module.exports = {
       files: ["*.html"],
       parser: "@html-eslint/parser",
       extends: ["plugin:@html-eslint/recommended"],
-      "excludedFiles": "*.test.js",
+      "excludedFiles": "",
       "rules": {
-        "@html-eslint/indent": ["error", 2],
-        "@html-eslint/require-closing-tags": [0]
+        "@html-eslint/indent": ["error", 2]
       }
     },
   ],
