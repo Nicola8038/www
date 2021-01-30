@@ -66,7 +66,7 @@
           <p class="h2 text-center">Luzius Meisser</p>
         </div>
         <div class="col-8">
-          <p>Dear Shareholders and potential future Shareholders</p>
+          <p><b>Dear Shareholders and potential future Shareholders</b></p>
           <p>This simple web page is where I decided to start my journey to bring fundamental investing to the crypto world.
             Today, crypto is synonymous with emotional markets that are often detached from fundamentals. While I appreciate the playfulness of
             today's crypto markets with all their memes and emojis,
@@ -125,8 +125,7 @@
               app (on <a href="https://apps.apple.com/ch/app/aktionariat/id1518326813?l=en">iOS</a> or <a
                 href="https://play.google.com/store/apps/details?id=com.aktionariat.app">Android</a>)
               to monitor your portfolio of crypto assets. The Aktionariat app can also display shares held in
-              traditional
-              form and assist existing shareholders in converting them into tokenized shares.
+              traditional form and assist existing shareholders in converting them into tokenized shares.
             </p>
           </div>
 
@@ -158,17 +157,34 @@
           </div>
 
           <div class="mt-5">
-            <h3>Financial Reports</h3>
+            <h3>Financials</h3>
             <p>
               Aktionariat AG has been founded in June 2020 and has not completed any accounting year yet.
-              All yearly financial reports will be published here.
+              At the end of 2020, we had about 30'000 CHF liquidity left in our bank accounts and only minimal income. More details to be published soon.
+              We do not expect to reach break-even in the coming years and therefore depend on further investments. These can come from
+              three sources: the founders, employees using part of their salaries to buy more shares, and external investors that are
+              adventerous enough to believe in our vision. Our aim is to route all of these transactions through our open market widget,
+              giving every buyer the exact same opportunity to buy our shares and creating a high level of market transparency.
+            </p>
+            <p>
+              Potential investors should note that unlike Bitcoin, shares of a company do not have a limited supply. The majority of the shareholders can always
+              decide to print and offer more shares to finance the company's goals (if they finds a buyer). We plan to make extensive use of this possibility, leading 
+              to significant dilution over the coming years. However, unlike with Bitcoin, every shareholder always gets the right to buy his fair share of newly issued shares by law. This
+              is one of the advantages of building on proven concepts and issuing another crypto currency: shares come with a bundle of legally enshrined and time-tested rights that
+              protect the shareholders.
             </p>
           </div>
 
           <div class="mt-5">
             <h3 id="market">Market</h3>
-            <p>The market is the central component of the investor relations page, enabling investors to buy and sell
-              shares directly from the company.</p>
+            <p>In our vision, a direct market is the central component of every investor relations page, enabling investors to buy and sell
+              shares directly from the company. In this case, we offer <a target="_blank" href="https://etherscan.io/address/0x6f38e0f1a73c96cb3f42598613ea3474f09cb200">Aktionariat AG Shares (DAKS)</a>.
+            These blockchain-based security tokens represent shares of Aktionariat AG that are bound to a <a target="_blank" href="assets/terms/Token Holder Agreement.pdf">Token Holder Agreement</a>.
+            The token holder agreement preserves the strategic option of an exit by allowing an acquirer to squeeze out all minority shareholders in case a 75% majority
+            agrees with the acquisition. This is usually called a "drag-along agreement", hence the prefix "Draggable" in the token name. The DAKS token contract allows
+            the drag-along agreement to be automatically enforced, allowing it to be efficiently executed even if there are thousands of shareholders. At the same time, the agreement
+            also protects the minority token holders by ensuring that they can sell their shares at the same price as the big shareholders in such an event ("tag-along").
+            </p>
             <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
               <app-market market="0x142b70be2c6cf57caf49833013408040b12ab920" style="flex: 1; max-width: 600px;">
               </app-market>
@@ -176,8 +192,9 @@
             <div class="mt-2">
               <p>Investors can use the Aktionariat mobile app, MetaMask or any other WalletConnect compatible Ethereum
                 wallet to interact with the market widget and complete their transactions without any need for
-                intermediaries.</p>
-              <p>The market widget is powered by a <a
+                intermediaries. With each sold share, the price is automatically adjusted upwards a little and with each repurchased shares
+              it is adjusted downwards again by the same amount, allowing a market price to be formed.</p>
+              <p>The market widget is powered by an <a
                   href="https://github.com/aktionariat/contracts/blob/master/src/Market.sol">open-source smart
                   contract</a> and does depend on Aktionariat's servers to function.</p>
             </div>
@@ -202,12 +219,13 @@
           <div class="mt-5">
             <h3>Shareholder Registry</h3>
             <p>
-              The registration widget enables easy registration of shareholder information on the investor relations
-              page.
-              Please also note that for investors using the Aktionariat mobile app with a completed profile, the
-              registration is automatically done without the need for any additional steps.
+              Shareholders can either register their shares with the form below, using a wallet of choice, or by holding
+              their shares with the Aktionariat wallet app for 
+              <a href="https://apps.apple.com/ch/app/aktionariat/id1518326813?l=en" target="_blank">iOS</a> or <a href="https://play.google.com/store/apps/details?id=com.aktionariat.app" target="_blank">Android</a>.
+              You only need to register each of your addresses once. Once registered, newly purchased shares will automatically
+              be added to the shareholder registry in your name. This includes shares from other issuers using our services. For
+              details, please consult our <a href="terms.html">privacy policy</a>.
             </p>
-
             <div style="display: flex; justify-content: center;">
               <app-registration companyId="77" style="flex: 1; max-width: 500px; background-color: #0e1d1d;">
               </app-registration>
